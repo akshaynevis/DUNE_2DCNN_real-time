@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hwlink:HwLinkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hwlink="http://www.xilinx.com/acceleration/hwlink" name="myproject_system_hw_link" platform="/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm" systemProject="myproject_system" cpu="pl">
+  <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.hwlink.sw_emu.460021062">
+    <configBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="binary_container_1" xoccOptions="--user_ip_repo_paths /mnt/storage1/akshaymalige/Alveo_projects/dune_2dcnn/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12_2018/myproject_prj/solution1/impl/ip --config ../myconfig.cfg" traceMemory="FIFO:8K">
+        <kernels name="krnl_rtl" projectName="myproject_kernels" numComputeUnits="12" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="krnl_rtl_1" slr="SLR0"/>
+          <computeUnits name="krnl_rtl_2" slr="SLR0"/>
+          <computeUnits name="krnl_rtl_3" slr="SLR0"/>
+          <computeUnits name="krnl_rtl_4" slr="SLR1"/>
+          <computeUnits name="krnl_rtl_5" slr="SLR2"/>
+          <computeUnits name="krnl_rtl_6" slr="SLR2"/>
+          <computeUnits name="krnl_rtl_7" slr="SLR2"/>
+          <computeUnits name="krnl_rtl_8" slr="SLR3"/>
+          <computeUnits name="krnl_rtl_9" slr="SLR3"/>
+          <computeUnits name="krnl_rtl_10" slr="SLR3"/>
+          <computeUnits name="krnl_rtl_11" slr="SLR0"/>
+          <computeUnits name="krnl_rtl_12" slr="SLR3"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwlink.hw_emu.238030073">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="binary_container_1" xoccOptions="--user_ip_repo_paths /mnt/storage1/akshaymalige/Alveo_projects/dune_2dcnn/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12_2018/myproject_prj/solution1/impl/ip --config ../myconfig.cfg" traceMemory="FIFO:8K">
+        <kernels name="krnl_rtl" projectName="myproject_kernels" numComputeUnits="12" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="krnl_rtl_1" slr="SLR0"/>
+          <computeUnits name="krnl_rtl_2" slr="SLR0"/>
+          <computeUnits name="krnl_rtl_3" slr="SLR0"/>
+          <computeUnits name="krnl_rtl_4" slr="SLR1"/>
+          <computeUnits name="krnl_rtl_5" slr="SLR2"/>
+          <computeUnits name="krnl_rtl_6" slr="SLR2"/>
+          <computeUnits name="krnl_rtl_7" slr="SLR2"/>
+          <computeUnits name="krnl_rtl_8" slr="SLR3"/>
+          <computeUnits name="krnl_rtl_9" slr="SLR3"/>
+          <computeUnits name="krnl_rtl_10" slr="SLR3"/>
+          <computeUnits name="krnl_rtl_11" slr="SLR0"/>
+          <computeUnits name="krnl_rtl_12" slr="SLR3"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="binary_container_1" xoccOptions="--user_ip_repo_paths /mnt/storage1/akshaymalige/Alveo_projects/dune_2dcnn/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12_2018/myproject_prj/solution1/impl/ip">
+        <kernels name="krnl_rtl" projectName="myproject_kernels" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="krnl_rtl_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.ide.accel.config.hwlink.hw.2092940653">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="binary_container_1" xoccOptions="--user_ip_repo_paths /mnt/storage1/akshaymalige/Alveo_projects/dune_2dcnn/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12_2018/myproject_prj/solution1/impl/ip --config ../myconfig.cfg" traceMemory="FIFO:8K">
+        <kernels name="krnl_rtl" projectName="myproject_kernels" numComputeUnits="12" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="krnl_rtl_1" slr="SLR0"/>
+          <computeUnits name="krnl_rtl_2" slr="SLR0"/>
+          <computeUnits name="krnl_rtl_3" slr="SLR0"/>
+          <computeUnits name="krnl_rtl_4" slr="SLR1"/>
+          <computeUnits name="krnl_rtl_5" slr="SLR2"/>
+          <computeUnits name="krnl_rtl_6" slr="SLR2"/>
+          <computeUnits name="krnl_rtl_7" slr="SLR2"/>
+          <computeUnits name="krnl_rtl_8" slr="SLR3"/>
+          <computeUnits name="krnl_rtl_9" slr="SLR3"/>
+          <computeUnits name="krnl_rtl_10" slr="SLR3"/>
+          <computeUnits name="krnl_rtl_11" slr="SLR0"/>
+          <computeUnits name="krnl_rtl_12" slr="SLR3"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="binary_container_1" xoccOptions="--user_ip_repo_paths /mnt/storage1/akshaymalige/Alveo_projects/dune_2dcnn/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12_2018/myproject_prj/solution1/impl/ip --config ../myconfig.cfg" traceMemory="FIFO:8K">
+        <kernels name="krnl_rtl" projectName="myproject_kernels" numComputeUnits="10" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="krnl_rtl_1" slr="SLR0"/>
+          <computeUnits name="krnl_rtl_2" slr="SLR0"/>
+          <computeUnits name="krnl_rtl_3" slr="SLR0"/>
+          <computeUnits name="krnl_rtl_4" slr="SLR1"/>
+          <computeUnits name="krnl_rtl_5" slr="SLR2"/>
+          <computeUnits name="krnl_rtl_6" slr="SLR2"/>
+          <computeUnits name="krnl_rtl_7" slr="SLR2"/>
+          <computeUnits name="krnl_rtl_8" slr="SLR3"/>
+          <computeUnits name="krnl_rtl_9" slr="SLR3"/>
+          <computeUnits name="krnl_rtl_10" slr="SLR3"/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+</hwlink:HwLinkProject>
