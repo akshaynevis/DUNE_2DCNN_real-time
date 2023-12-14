@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1697246639000">
+  <ports id="1" name="data_V_data_0_V" type="PortType" originalName="data.V.data[0].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="data_V_data_1_V" type="PortType" originalName="data.V.data[1].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="res_V_data_0_V" type="PortType" originalName="res.V.data[0].V" coreName="FIFO_SRL" bitwidth="1024" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="4" name="res_V_data_1_V" type="PortType" originalName="res.V.data[1].V" coreName="FIFO_SRL" bitwidth="1024" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="23" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="24" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="25" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="26" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="27" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="28" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="31" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@ports.2"/>
+  <edges id="32" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@ports.3"/>
+  <edges id="33" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="34" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="42" pipe_depth="1" RegionName="linear&lt;array,array&lt;ap_fixed,2u>,linear_config14>">
+    <basic_blocks id="20" name="linear&lt;array,array&lt;ap_fixed,2u>,linear_config14>" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="empty" lineNumber="41" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="54" opcode="read" m_display="0" m_delay="1.45" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 2&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;1024, 1006, 4, 0, 0&amp;gt;, 2&amp;gt;, linear_config14&amp;gt;"/>
+        <dataInputObjs>data_V_data_0_V</dataInputObjs>
+        <dataInputObjs>data_V_data_1_V</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="tmp_data_0_V" lineNumber="41" originalName="tmp.data[0].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 2&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;1024, 1006, 4, 0, 0&amp;gt;, 2&amp;gt;, linear_config14&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="tmp_data_1_V" lineNumber="41" originalName="tmp.data[1].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 2&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;1024, 1006, 4, 0, 0&amp;gt;, 2&amp;gt;, linear_config14&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="tmp_data_0_V_3" lineNumber="47" originalName="tmp.data[0].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." rtlName="res_V_data_0_V_din" bitwidth="1024" opcode="sext" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="47" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 2&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;1024, 1006, 4, 0, 0&amp;gt;, 2&amp;gt;, linear_config14&amp;gt;"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="tmp_data_1_V_3" lineNumber="47" originalName="tmp.data[1].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." rtlName="res_V_data_1_V_din" bitwidth="1024" opcode="sext" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="47" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 2&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;1024, 1006, 4, 0, 0&amp;gt;, 2&amp;gt;, linear_config14&amp;gt;"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="res_V_data_0_V_write_ln50" lineNumber="50" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." opcode="write" m_display="0" m_delay="1.45" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="50" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 2&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;1024, 1006, 4, 0, 0&amp;gt;, 2&amp;gt;, linear_config14&amp;gt;"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>res_V_data_0_V</dataOutputObjs>
+        <dataOutputObjs>res_V_data_1_V</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="_ln52" lineNumber="52" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." opcode="ret" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="52" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 2&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;1024, 1006, 4, 0, 0&amp;gt;, 2&amp;gt;, linear_config14&amp;gt;"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_activation_stream.h">
+        <validLinenumbers>41</validLinenumbers>
+        <validLinenumbers>47</validLinenumbers>
+        <validLinenumbers>50</validLinenumbers>
+        <validLinenumbers>52</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <expressionNodes realName="tmp_data_1_V_3_fu_71">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_1_V_fu_62">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_0_V_3_fu_66">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_0_V_fu_58">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="write_ln50_write_fu_48">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="empty_read_fu_40">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <ioPorts name="data_V_data_0_V">
+    <contents name="read">
+      <nodeIds>12</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_V_data_1_V">
+    <contents name="read">
+      <nodeIds>12</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_0_V">
+    <contents name="write">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_1_V">
+    <contents name="write">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mII="1" mDepth="1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>20</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

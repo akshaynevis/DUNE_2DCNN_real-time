@@ -1,0 +1,63 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'pooling2d_cl_array_array_ap_fixed_16u_config9_s'" level="0">
+<item name = "Date">Sat Aug  8 08:21:39 2020
+</item>
+<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcu250-figd2104-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 3.406 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">260, 260, 1.300 us, 1.300 us, 260, 260, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s_fu_714">reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+<column name="grp_reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s_fu_735">reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+<column name="grp_reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s_fu_756">reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+<column name="grp_reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s_fu_777">reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+<column name="grp_reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s_fu_798">reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+<column name="grp_reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s_fu_819">reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+<column name="grp_reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s_fu_840">reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+<column name="grp_reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s_fu_861">reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+<column name="grp_reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s_fu_882">reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+<column name="grp_reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s_fu_903">reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+<column name="grp_reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s_fu_924">reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+<column name="grp_reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s_fu_945">reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+<column name="grp_reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s_fu_966">reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+<column name="grp_reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s_fu_987">reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+<column name="grp_reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s_fu_1008">reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+<column name="grp_reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s_fu_1029">reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+<column name="call_ret_shift_line_buffer_array_ap_fixed_16u_config9_s_fu_1050">shift_line_buffer_array_ap_fixed_16u_config9_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- ReadInputHeight_ReadInputWidth">258, 258, 4, 1, 1, 256, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

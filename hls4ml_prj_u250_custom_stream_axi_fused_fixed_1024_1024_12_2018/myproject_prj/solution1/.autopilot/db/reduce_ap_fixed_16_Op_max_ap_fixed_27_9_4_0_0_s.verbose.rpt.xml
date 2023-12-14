@@ -1,0 +1,157 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s'" level="0">
+<item name = "Date">Sat Aug  8 08:22:51 2020
+</item>
+<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcu250-figd2104-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 3.406 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 705, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 9, -</column>
+<column name="Register">-, -, 82, -, -</column>
+<specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
+<specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="icmp_ln1496_10_fu_186_p2">icmp, 0, 0, 20, 27, 27</column>
+<column name="icmp_ln1496_11_fu_200_p2">icmp, 0, 0, 20, 27, 27</column>
+<column name="icmp_ln1496_12_fu_214_p2">icmp, 0, 0, 20, 27, 27</column>
+<column name="icmp_ln1496_13_fu_228_p2">icmp, 0, 0, 20, 27, 27</column>
+<column name="icmp_ln1496_14_fu_242_p2">icmp, 0, 0, 20, 27, 27</column>
+<column name="icmp_ln1496_15_fu_256_p2">icmp, 0, 0, 20, 27, 27</column>
+<column name="icmp_ln1496_16_fu_270_p2">icmp, 0, 0, 20, 27, 27</column>
+<column name="icmp_ln1496_17_fu_284_p2">icmp, 0, 0, 20, 27, 27</column>
+<column name="icmp_ln1496_18_fu_298_p2">icmp, 0, 0, 20, 27, 27</column>
+<column name="icmp_ln1496_19_fu_312_p2">icmp, 0, 0, 20, 27, 27</column>
+<column name="icmp_ln1496_20_fu_326_p2">icmp, 0, 0, 20, 27, 27</column>
+<column name="icmp_ln1496_7_fu_144_p2">icmp, 0, 0, 20, 27, 27</column>
+<column name="icmp_ln1496_8_fu_158_p2">icmp, 0, 0, 20, 27, 27</column>
+<column name="icmp_ln1496_9_fu_172_p2">icmp, 0, 0, 20, 27, 27</column>
+<column name="icmp_ln1496_fu_130_p2">icmp, 0, 0, 20, 27, 27</column>
+<column name="select_ln86_10_fu_192_p3">select, 0, 0, 27, 1, 27</column>
+<column name="select_ln86_11_fu_206_p3">select, 0, 0, 27, 1, 27</column>
+<column name="select_ln86_12_fu_220_p3">select, 0, 0, 27, 1, 27</column>
+<column name="select_ln86_13_fu_234_p3">select, 0, 0, 27, 1, 27</column>
+<column name="select_ln86_14_fu_248_p3">select, 0, 0, 27, 1, 27</column>
+<column name="select_ln86_15_fu_262_p3">select, 0, 0, 27, 1, 27</column>
+<column name="select_ln86_16_fu_276_p3">select, 0, 0, 27, 1, 27</column>
+<column name="select_ln86_17_fu_290_p3">select, 0, 0, 27, 1, 27</column>
+<column name="select_ln86_18_fu_304_p3">select, 0, 0, 27, 1, 27</column>
+<column name="select_ln86_19_fu_318_p3">select, 0, 0, 27, 1, 27</column>
+<column name="select_ln86_20_fu_330_p3">select, 0, 0, 27, 1, 27</column>
+<column name="select_ln86_7_fu_150_p3">select, 0, 0, 27, 1, 27</column>
+<column name="select_ln86_8_fu_164_p3">select, 0, 0, 27, 1, 27</column>
+<column name="select_ln86_9_fu_178_p3">select, 0, 0, 27, 1, 27</column>
+<column name="select_ln86_fu_136_p3">select, 0, 0, 27, 1, 27</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_return">9, 2, 27, 54</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_ce_reg">1, 0, 1, 0</column>
+<column name="ap_return_int_reg">27, 0, 27, 0</column>
+<column name="select_ln86_12_reg_336">27, 0, 27, 0</column>
+<column name="select_ln86_19_reg_342">27, 0, 27, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, reduce&lt;ap_fixed,16,Op_max&lt;ap_fixed&lt;27,9,4,0,0&gt;&gt;&gt;, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, reduce&lt;ap_fixed,16,Op_max&lt;ap_fixed&lt;27,9,4,0,0&gt;&gt;&gt;, return value</column>
+<column name="ap_return">out, 27, ap_ctrl_hs, reduce&lt;ap_fixed,16,Op_max&lt;ap_fixed&lt;27,9,4,0,0&gt;&gt;&gt;, return value</column>
+<column name="ap_ce">in, 1, ap_ctrl_hs, reduce&lt;ap_fixed,16,Op_max&lt;ap_fixed&lt;27,9,4,0,0&gt;&gt;&gt;, return value</column>
+<column name="x_0_V_read">in, 27, ap_none, x_0_V_read, scalar</column>
+<column name="x_1_V_read">in, 27, ap_none, x_1_V_read, scalar</column>
+<column name="x_2_V_read">in, 27, ap_none, x_2_V_read, scalar</column>
+<column name="x_3_V_read">in, 27, ap_none, x_3_V_read, scalar</column>
+<column name="x_4_V_read">in, 27, ap_none, x_4_V_read, scalar</column>
+<column name="x_5_V_read">in, 27, ap_none, x_5_V_read, scalar</column>
+<column name="x_6_V_read">in, 27, ap_none, x_6_V_read, scalar</column>
+<column name="x_7_V_read">in, 27, ap_none, x_7_V_read, scalar</column>
+<column name="x_8_V_read">in, 27, ap_none, x_8_V_read, scalar</column>
+<column name="x_9_V_read">in, 27, ap_none, x_9_V_read, scalar</column>
+<column name="x_10_V_read">in, 27, ap_none, x_10_V_read, scalar</column>
+<column name="x_11_V_read">in, 27, ap_none, x_11_V_read, scalar</column>
+<column name="x_12_V_read">in, 27, ap_none, x_12_V_read, scalar</column>
+<column name="x_13_V_read">in, 27, ap_none, x_13_V_read, scalar</column>
+<column name="x_14_V_read">in, 27, ap_none, x_14_V_read, scalar</column>
+<column name="x_15_V_read">in, 27, ap_none, x_15_V_read, scalar</column>
+</table>
+</item>
+</section>
+</profile>

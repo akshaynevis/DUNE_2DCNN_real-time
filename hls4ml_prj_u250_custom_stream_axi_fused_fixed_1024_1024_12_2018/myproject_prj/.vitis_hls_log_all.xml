@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <csimLog>
+        <logs message="ERROR: [HLS 200-1459] Project is not compatible with vitis_hls, please use -upgrade or -reset open_project options&#xA;cannot open project&#xA;    while executing&#xA;&quot;source /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stre...&quot;&#xA;    invoked from within&#xA;&quot;hls::main /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_s...&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xA;    invoked from within&#xA;&quot;hls_proc $argv&quot;&#xA;" projectName="myproject_prj" solutionName="solution1" date="2023-10-16T16:40:42.177-0400"/>
+        <logs message="ERROR: [HLS 200-1459] Project is not compatible with vitis_hls, please use -upgrade or -reset open_project options&#xA;cannot open project&#xA;    while executing&#xA;&quot;source /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stre...&quot;&#xA;    invoked from within&#xA;&quot;hls::main /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_s...&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xA;    invoked from within&#xA;&quot;hls_proc $argv&quot;&#xA;" projectName="myproject_prj" solutionName="solution1" date="2023-10-16T16:40:24.281-0400"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

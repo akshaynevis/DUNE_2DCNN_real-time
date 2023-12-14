@@ -1,0 +1,846 @@
+<ENTRY>
+{
+ "thisFile": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/myproject_kernel.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Oct 13 21:25:31 2023",
+ "timestampMillis": "1697246731511",
+ "buildStep": {
+  "cmdId": "11a41f61-5c71-4aab-a794-7654ad3e5128",
+  "name": "v++",
+  "logFile": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/link.steps.log",
+  "commandLine": "/scratch/xilinx_jsc2268/Vitis/2020.1/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw --platform xilinx_u250_xdma_201830_2 --link ../xo_files/myproject_kernel.xo -omyproject_kernel.xclbin --user_ip_repo_paths /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/myproject_prj/solution1/impl/ip ",
+  "args": [
+   "-t",
+   "hw",
+   "--platform",
+   "xilinx_u250_xdma_201830_2",
+   "--link",
+   "../xo_files/myproject_kernel.xo",
+   "-omyproject_kernel.xclbin",
+   "--user_ip_repo_paths",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/myproject_prj/solution1/impl/ip"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Oct 13 21:25:31 2023",
+ "timestampMillis": "1697246731511",
+ "status": {
+  "cmdId": "11a41f61-5c71-4aab-a794-7654ad3e5128",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Oct 13 21:25:53 2023",
+ "timestampMillis": "1697246753796",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_xdma_201830_2.xpfm",
+  "hardwareDsa": "xilinx_u250_xdma_201830_2.dsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_xdma_201830_2",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "myproject_kernel",
+    "file": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/myproject_kernel.xclbin",
+    "reports": []
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "krnl_rtl",
+     "file": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xo_files/myproject_kernel.xo",
+     "reports": []
+    },
+    "sources": [],
+    "psSources": [],
+    "cuNames": [
+     "krnl_rtl_1"
+    ],
+    "type": "RTL"
+   }
+  ],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Oct 13 21:25:53 2023",
+ "timestampMillis": "1697246753992",
+ "buildStep": {
+  "cmdId": "75f570b2-732f-48e7-aa26-d57578535216",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xo_files/myproject_kernel.xo --xpfm /opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm --target hw --output_dir /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int --temp_dir /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/sys_link",
+  "args": [
+   "--xo",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xo_files/myproject_kernel.xo",
+   "--xpfm",
+   "/opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int",
+   "--temp_dir",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/sys_link"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Oct 13 21:25:53 2023",
+ "timestampMillis": "1697246753993",
+ "status": {
+  "cmdId": "75f570b2-732f-48e7-aa26-d57578535216",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Oct 13 21:26:11 2023",
+ "timestampMillis": "1697246771406",
+ "status": {
+  "cmdId": "75f570b2-732f-48e7-aa26-d57578535216",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Oct 13 21:26:11 2023",
+ "timestampMillis": "1697246771408",
+ "buildStep": {
+  "cmdId": "09baeab8-2ed7-428e-b59e-1cedf646a9f0",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/sdsl.dat -rtd /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/cf2sw.rtd -xclbin /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/xclbin_orig.xml -o /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/sdsl.dat",
+   "-rtd",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/cf2sw.rtd",
+   "-xclbin",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/xclbin_orig.xml",
+   "-o",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Oct 13 21:26:11 2023",
+ "timestampMillis": "1697246771409",
+ "status": {
+  "cmdId": "09baeab8-2ed7-428e-b59e-1cedf646a9f0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Oct 13 21:26:13 2023",
+ "timestampMillis": "1697246773726",
+ "status": {
+  "cmdId": "09baeab8-2ed7-428e-b59e-1cedf646a9f0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Oct 13 21:26:13 2023",
+ "timestampMillis": "1697246773728",
+ "buildStep": {
+  "cmdId": "6c15dbf6-95f1-4811-bbd7-680aca347fde",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Oct 13 21:26:13 2023",
+ "timestampMillis": "1697246773729",
+ "status": {
+  "cmdId": "6c15dbf6-95f1-4811-bbd7-680aca347fde",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Oct 13 21:26:15 2023",
+ "timestampMillis": "1697246775574",
+ "report": {
+  "path": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Oct 13 21:26:15 2023",
+ "timestampMillis": "1697246775575",
+ "status": {
+  "cmdId": "6c15dbf6-95f1-4811-bbd7-680aca347fde",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Oct 13 21:26:15 2023",
+ "timestampMillis": "1697246775576",
+ "buildStep": {
+  "cmdId": "6ee869f4-01f5-4565-9bb6-a12052c8221e",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f xilinx_u250_xdma_201830_2 --remote_ip_cache /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/.ipcache --user_ip_repo_paths /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/myproject_prj/solution1/impl/ip --output_dir /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int --log_dir /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/logs/link --report_dir /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/reports/link --config /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/vplConfig.ini -k /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link --no-info --iprepo /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/xo/ip_repo/fastmachinelearning_org_hls4ml_krnl_rtl_1_0 --messageDb /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/run_link/vpl.pb /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "xilinx_u250_xdma_201830_2",
+   "--remote_ip_cache",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/.ipcache",
+   "--user_ip_repo_paths",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/myproject_prj/solution1/impl/ip",
+   "--output_dir",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int",
+   "--log_dir",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/logs/link",
+   "--report_dir",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/reports/link",
+   "--config",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/vplConfig.ini",
+   "-k",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link",
+   "--no-info",
+   "--iprepo",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/xo/ip_repo/fastmachinelearning_org_hls4ml_krnl_rtl_1_0",
+   "--messageDb",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/run_link/vpl.pb",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nparam=compiler.vppCurrentWorkingDir=/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files\nmisc=BinaryName=myproject_kernel\n\n[connectivity]\nnk=krnl_rtl:1:krnl_rtl_1\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\n\n"
+   }
+  ],
+  "cwd": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Oct 13 21:26:15 2023",
+ "timestampMillis": "1697246775577",
+ "status": {
+  "cmdId": "6ee869f4-01f5-4565-9bb6-a12052c8221e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Oct 13 21:26:17 2023",
+ "timestampMillis": "1697246777976",
+ "buildStep": {
+  "cmdId": "a4639388-a0ab-4ed7-82cb-aaeb7a1966ad",
+  "name": "vpl",
+  "logFile": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/link.steps.log",
+  "commandLine": "/scratch/xilinx_jsc2268/Vitis/2020.1/bin/unwrapped/lnx64.o/vpl -t hw -f xilinx_u250_xdma_201830_2 --remote_ip_cache /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/.ipcache --user_ip_repo_paths /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/myproject_prj/solution1/impl/ip --output_dir /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int --log_dir /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/logs/link --report_dir /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/reports/link --config /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/vplConfig.ini -k /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link --no-info --iprepo /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/xo/ip_repo/fastmachinelearning_org_hls4ml_krnl_rtl_1_0 --messageDb /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/run_link/vpl.pb /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Oct 13 21:26:17 2023",
+ "timestampMillis": "1697246777976",
+ "status": {
+  "cmdId": "a4639388-a0ab-4ed7-82cb-aaeb7a1966ad",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Fri Oct 13 21:26:37 2023",
+ "timestampMillis": "1697246797693",
+ "vivadoProject": {
+  "openDir": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Oct 13 21:26:37 2023",
+ "timestampMillis": "1697246797695",
+ "buildStep": {
+  "cmdId": "cc98dc21-d9ed-44bc-9984-a9a00eb7ab9c",
+  "name": "vivado",
+  "logFile": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Oct 13 21:26:37 2023",
+ "timestampMillis": "1697246797696",
+ "status": {
+  "cmdId": "cc98dc21-d9ed-44bc-9984-a9a00eb7ab9c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 14 00:40:37 2023",
+ "timestampMillis": "1697258437758",
+ "status": {
+  "cmdId": "cc98dc21-d9ed-44bc-9984-a9a00eb7ab9c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 14 00:40:37 2023",
+ "timestampMillis": "1697258437772",
+ "report": {
+  "path": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/reports/link/imp/kernel_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 14 00:40:37 2023",
+ "timestampMillis": "1697258437773",
+ "report": {
+  "path": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/reports/link/imp/kernel_util_routed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 14 00:40:37 2023",
+ "timestampMillis": "1697258437773",
+ "report": {
+  "path": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/reports/link/imp/kernel_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_PLACEMENT"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 14 00:40:37 2023",
+ "timestampMillis": "1697258437774",
+ "report": {
+  "path": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/reports/link/imp/kernel_util_synthed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 14 00:40:37 2023",
+ "timestampMillis": "1697258437774",
+ "report": {
+  "path": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/reports/link/imp/kernel_util_placed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "GLOBAL_UTILIZATION_PLACEMENT"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 14 00:40:37 2023",
+ "timestampMillis": "1697258437877",
+ "report": {
+  "path": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/reports/link/imp/xilinx_u250_xdma_201830_2_bb_locked_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 14 00:40:38 2023",
+ "timestampMillis": "1697258438591",
+ "status": {
+  "cmdId": "a4639388-a0ab-4ed7-82cb-aaeb7a1966ad",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 14 00:40:38 2023",
+ "timestampMillis": "1697258438605",
+ "status": {
+  "cmdId": "6ee869f4-01f5-4565-9bb6-a12052c8221e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Oct 14 00:40:38 2023",
+ "timestampMillis": "1697258438607",
+ "buildStep": {
+  "cmdId": "940bb032-ea20-447c-a223-2aa9a9f36977",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 14 00:40:38 2023",
+ "timestampMillis": "1697258438608",
+ "status": {
+  "cmdId": "940bb032-ea20-447c-a223-2aa9a9f36977",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 14 00:40:38 2023",
+ "timestampMillis": "1697258438610",
+ "report": {
+  "path": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/myproject_kernel_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Oct 14 00:40:38 2023",
+ "timestampMillis": "1697258438611",
+ "buildStep": {
+  "cmdId": "dc7b7061-b1b4-4d82-9794-f700e7c42671",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/address_map.xml -sdsl /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/sdsl.dat -xclbin /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/xclbin_orig.xml -rtd /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/myproject_kernel.rtd -o /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/myproject_kernel.xml",
+  "args": [
+   "-a",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/address_map.xml",
+   "-sdsl",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/sdsl.dat",
+   "-xclbin",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/myproject_kernel.rtd",
+   "-o",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/myproject_kernel.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 14 00:40:38 2023",
+ "timestampMillis": "1697258438612",
+ "status": {
+  "cmdId": "dc7b7061-b1b4-4d82-9794-f700e7c42671",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 14 00:40:40 2023",
+ "timestampMillis": "1697258440234",
+ "status": {
+  "cmdId": "dc7b7061-b1b4-4d82-9794-f700e7c42671",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 14 00:40:40 2023",
+ "timestampMillis": "1697258440238",
+ "report": {
+  "path": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Oct 14 00:40:40 2023",
+ "timestampMillis": "1697258440238",
+ "buildStep": {
+  "cmdId": "6296b22d-be2f-48d8-9722-e9a529b536b5",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeSystemDiagram",
+  "args": [
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/myproject_kernel.rtd",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 14 00:40:40 2023",
+ "timestampMillis": "1697258440239",
+ "status": {
+  "cmdId": "6296b22d-be2f-48d8-9722-e9a529b536b5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 14 00:40:40 2023",
+ "timestampMillis": "1697258440239",
+ "status": {
+  "cmdId": "6296b22d-be2f-48d8-9722-e9a529b536b5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 14 00:40:40 2023",
+ "timestampMillis": "1697258440239",
+ "status": {
+  "cmdId": "940bb032-ea20-447c-a223-2aa9a9f36977",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Oct 14 00:40:40 2023",
+ "timestampMillis": "1697258440240",
+ "buildStep": {
+  "cmdId": "b8024b1d-c26b-45eb-a443-5360d92b80b9",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section DEBUG_IP_LAYOUT:JSON:/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/debug_ip_layout.rtd --add-section BITSTREAM:RAW:/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/myproject_kernel.rtd --append-section :JSON:/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/myproject_kernel_xml.rtd --add-section BUILD_METADATA:JSON:/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/myproject_kernel_build.rtd --add-section EMBEDDED_METADATA:RAW:/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/myproject_kernel.xml --add-section SYSTEM_METADATA:RAW:/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/systemDiagramModelSlrBaseAddress.json --output /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/myproject_kernel.xclbin",
+  "args": [
+   "--add-section",
+   "DEBUG_IP_LAYOUT:JSON:/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/debug_ip_layout.rtd",
+   "--add-section",
+   "BITSTREAM:RAW:/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/partial.bit",
+   "--force",
+   "--target",
+   "hw",
+   "--key-value",
+   "SYS:dfx_enable:true",
+   "--add-section",
+   ":JSON:/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/myproject_kernel.rtd",
+   "--append-section",
+   ":JSON:/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/myproject_kernel_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/myproject_kernel_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/myproject_kernel.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--output",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/myproject_kernel.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 14 00:40:40 2023",
+ "timestampMillis": "1697258440241",
+ "status": {
+  "cmdId": "b8024b1d-c26b-45eb-a443-5360d92b80b9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 14 00:40:40 2023",
+ "timestampMillis": "1697258440485",
+ "status": {
+  "cmdId": "b8024b1d-c26b-45eb-a443-5360d92b80b9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Oct 14 00:40:40 2023",
+ "timestampMillis": "1697258440487",
+ "buildStep": {
+  "cmdId": "4e3aead7-a31b-42f5-a615-ffcbcb954919",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --force --info /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/myproject_kernel.xclbin.info --input /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/myproject_kernel.xclbin",
+  "args": [
+   "--quiet",
+   "--force",
+   "--info",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/myproject_kernel.xclbin.info",
+   "--input",
+   "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/myproject_kernel.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 14 00:40:40 2023",
+ "timestampMillis": "1697258440488",
+ "status": {
+  "cmdId": "4e3aead7-a31b-42f5-a615-ffcbcb954919",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 14 00:40:41 2023",
+ "timestampMillis": "1697258441248",
+ "status": {
+  "cmdId": "4e3aead7-a31b-42f5-a615-ffcbcb954919",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Oct 14 00:40:41 2023",
+ "timestampMillis": "1697258441249",
+ "buildStep": {
+  "cmdId": "7f528ab6-6404-4ee5-9c76-78274bfe247b",
+  "name": "generate_sc_driver",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 14 00:40:41 2023",
+ "timestampMillis": "1697258441250",
+ "status": {
+  "cmdId": "7f528ab6-6404-4ee5-9c76-78274bfe247b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 14 00:40:41 2023",
+ "timestampMillis": "1697258441250",
+ "status": {
+  "cmdId": "7f528ab6-6404-4ee5-9c76-78274bfe247b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 14 00:40:41 2023",
+ "timestampMillis": "1697258441252",
+ "report": {
+  "path": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/reports/link/system_estimate_myproject_kernel.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 14 00:40:41 2023",
+ "timestampMillis": "1697258441691",
+ "report": {
+  "path": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/reports/link/v++_link_myproject_kernel_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 14 00:40:41 2023",
+ "timestampMillis": "1697258441691",
+ "report": {
+  "path": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/v++_link_myproject_kernel_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Oct 14 00:40:41 2023",
+ "timestampMillis": "1697258441694",
+ "report": {
+  "path": "/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/xclbin_files/_x/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Oct 14 00:40:41 2023",
+ "timestampMillis": "1697258441695",
+ "status": {
+  "cmdId": "11a41f61-5c71-4aab-a794-7654ad3e5128",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

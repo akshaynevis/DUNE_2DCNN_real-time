@@ -1,0 +1,49 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'myproject_axi'" level="0">
+<item name = "Date">Sat Aug  8 08:22:10 2020
+</item>
+<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcu250-figd2104-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 4.370 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">7082, 10251, 35.410 us, 51.255 us, 4489, 6733, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_myproject_fu_856">myproject, 7043, 7043, 35.215 us, 35.215 us, 4489, 6733, dataflow</column>
+<column name="grp_Loop_1_proc408_fu_1625">Loop_1_proc408, 3844, 3844, 19.220 us, 19.220 us, 3844, 3844, none</column>
+<column name="grp_Loop_2_proc409_fu_1636">Loop_2_proc409, 2381, 6529, 11.905 us, 32.645 us, 2381, 6529, none</column>
+<column name="grp_Block_proc_fu_1642">Block_proc, 2, 2, 10.000 ns, 10.000 ns, 2, 2, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1697246604000">
+  <ports id="1" name="data_V_data_0_V" type="PortType" originalName="data.V.data[0].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="data_V_data_1_V" type="PortType" originalName="data.V.data[1].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="data_V_data_2_V" type="PortType" originalName="data.V.data[2].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="data_V_data_3_V" type="PortType" originalName="data.V.data[3].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="data_V_data_4_V" type="PortType" originalName="data.V.data[4].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="data_V_data_5_V" type="PortType" originalName="data.V.data[5].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="data_V_data_6_V" type="PortType" originalName="data.V.data[6].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="data_V_data_7_V" type="PortType" originalName="data.V.data[7].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="9" name="data_V_data_8_V" type="PortType" originalName="data.V.data[8].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="10" name="data_V_data_9_V" type="PortType" originalName="data.V.data[9].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="11" name="data_V_data_10_V" type="PortType" originalName="data.V.data[10].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="12" name="data_V_data_11_V" type="PortType" originalName="data.V.data[11].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="13" name="data_V_data_12_V" type="PortType" originalName="data.V.data[12].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="14" name="data_V_data_13_V" type="PortType" originalName="data.V.data[13].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="15" name="data_V_data_14_V" type="PortType" originalName="data.V.data[14].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="16" name="data_V_data_15_V" type="PortType" originalName="data.V.data[15].V" coreName="FIFO" bitwidth="27" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="17" name="res_V_data_0_V" type="PortType" originalName="res.V.data[0].V" coreName="FIFO" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="18" name="res_V_data_1_V" type="PortType" originalName="res.V.data[1].V" coreName="FIFO" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="19" name="res_V_data_2_V" type="PortType" originalName="res.V.data[2].V" coreName="FIFO" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="20" name="res_V_data_3_V" type="PortType" originalName="res.V.data[3].V" coreName="FIFO" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="21" name="res_V_data_4_V" type="PortType" originalName="res.V.data[4].V" coreName="FIFO" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="22" name="res_V_data_5_V" type="PortType" originalName="res.V.data[5].V" coreName="FIFO" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="23" name="res_V_data_6_V" type="PortType" originalName="res.V.data[6].V" coreName="FIFO" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="24" name="res_V_data_7_V" type="PortType" originalName="res.V.data[7].V" coreName="FIFO" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="25" name="res_V_data_8_V" type="PortType" originalName="res.V.data[8].V" coreName="FIFO" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="26" name="res_V_data_9_V" type="PortType" originalName="res.V.data[9].V" coreName="FIFO" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="27" name="res_V_data_10_V" type="PortType" originalName="res.V.data[10].V" coreName="FIFO" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="28" name="res_V_data_11_V" type="PortType" originalName="res.V.data[11].V" coreName="FIFO" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="29" name="res_V_data_12_V" type="PortType" originalName="res.V.data[12].V" coreName="FIFO" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="30" name="res_V_data_13_V" type="PortType" originalName="res.V.data[13].V" coreName="FIFO" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="31" name="res_V_data_14_V" type="PortType" originalName="res.V.data[14].V" coreName="FIFO" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="32" name="res_V_data_15_V" type="PortType" originalName="res.V.data[15].V" coreName="FIFO" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="99" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="102" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="104" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="105" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="111" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="112" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="113" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="116" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="117" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="118" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="119" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="120" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="121" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="122" source_obj="//@ports.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="123" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="124" source_obj="//@ports.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="125" source_obj="//@ports.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="126" source_obj="//@ports.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="127" source_obj="//@ports.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="128" source_obj="//@ports.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="129" source_obj="//@ports.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="130" source_obj="//@ports.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="131" source_obj="//@ports.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="132" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="133" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="134" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="135" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="136" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="137" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="138" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="139" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="140" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="141" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="142" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="143" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="144" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="145" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="146" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="147" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="150" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.16"/>
+  <edges id="151" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.17"/>
+  <edges id="152" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.18"/>
+  <edges id="153" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.19"/>
+  <edges id="154" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.20"/>
+  <edges id="155" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.21"/>
+  <edges id="156" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.22"/>
+  <edges id="157" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.23"/>
+  <edges id="158" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.24"/>
+  <edges id="159" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.25"/>
+  <edges id="160" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.26"/>
+  <edges id="161" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.27"/>
+  <edges id="162" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.28"/>
+  <edges id="163" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.29"/>
+  <edges id="164" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.30"/>
+  <edges id="165" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.31"/>
+  <edges id="166" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="167" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="168" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="169" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="170" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="171" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="172" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="173" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="174" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="175" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="176" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="177" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="178" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="179" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="180" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="181" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="182" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="763" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="764" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="765" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="766" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <blocks id="66" name="block_66" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_72</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="_ln38" lineNumber="38" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." opcode="br" m_display="0" m_delay="0.6" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="38" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+      <controlInputObjs>block_72</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_activation_stream.h">
+      <validLinenumbers>38</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="98" name="block_98" type="BlockType">
+    <controlInputObjs>block_72</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="_ln52" lineNumber="52" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="52" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_activation_stream.h">
+      <validLinenumbers>52</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="222" pipe_depth="2" RegionName="LinearActLoop">
+    <basic_blocks id="72" name="block_72" type="BlockType">
+      <controlInputObjs>block_66</controlInputObjs>
+      <controlInputObjs>LinearActLoop</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_98</controlOutputObjs>
+      <controlOutputObjs>LinearActLoop</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="i_0" originalName="i" bitwidth="9" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <controlInputObjs>block_66</controlInputObjs>
+        <controlInputObjs>LinearActLoop</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="icmp_ln38" lineNumber="38" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." rtlName="icmp_ln38_fu_205_p2" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.59" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="38" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="i" lineNumber="38" originalName="i" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." rtlName="i_fu_211_p2" bitwidth="9" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.71" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="38" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="_ln38" lineNumber="38" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="38" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>LinearActLoop</controlInputObjs>
+        <controlInputObjs>block_98</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_activation_stream.h">
+        <validLinenumbers>38</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="96" name="LinearActLoop" type="BlockType">
+      <controlInputObjs>block_72</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_72</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="empty_145" lineNumber="41" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="432" opcode="read" nodeLabel="2.0" m_display="0" m_delay="1.45" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>data_V_data_0_V</dataInputObjs>
+        <dataInputObjs>data_V_data_1_V</dataInputObjs>
+        <dataInputObjs>data_V_data_2_V</dataInputObjs>
+        <dataInputObjs>data_V_data_3_V</dataInputObjs>
+        <dataInputObjs>data_V_data_4_V</dataInputObjs>
+        <dataInputObjs>data_V_data_5_V</dataInputObjs>
+        <dataInputObjs>data_V_data_6_V</dataInputObjs>
+        <dataInputObjs>data_V_data_7_V</dataInputObjs>
+        <dataInputObjs>data_V_data_8_V</dataInputObjs>
+        <dataInputObjs>data_V_data_9_V</dataInputObjs>
+        <dataInputObjs>data_V_data_10_V</dataInputObjs>
+        <dataInputObjs>data_V_data_11_V</dataInputObjs>
+        <dataInputObjs>data_V_data_12_V</dataInputObjs>
+        <dataInputObjs>data_V_data_13_V</dataInputObjs>
+        <dataInputObjs>data_V_data_14_V</dataInputObjs>
+        <dataInputObjs>data_V_data_15_V</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="tmp_data_0_V" lineNumber="41" originalName="tmp.data[0].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="tmp_data_1_V" lineNumber="41" originalName="tmp.data[1].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="tmp_data_2_V" lineNumber="41" originalName="tmp.data[2].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="tmp_data_3_V" lineNumber="41" originalName="tmp.data[3].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="tmp_data_4_V" lineNumber="41" originalName="tmp.data[4].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="tmp_data_5_V" lineNumber="41" originalName="tmp.data[5].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="tmp_data_6_V" lineNumber="41" originalName="tmp.data[6].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="tmp_data_7_V" lineNumber="41" originalName="tmp.data[7].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="tmp_data_8_V" lineNumber="41" originalName="tmp.data[8].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="tmp_data_9_V" lineNumber="41" originalName="tmp.data[9].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="tmp_data_10_V" lineNumber="41" originalName="tmp.data[10].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="tmp_data_11_V" lineNumber="41" originalName="tmp.data[11].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="tmp_data_12_V" lineNumber="41" originalName="tmp.data[12].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="tmp_data_13_V" lineNumber="41" originalName="tmp.data[13].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="tmp_data_14_V" lineNumber="41" originalName="tmp.data[14].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="tmp_data_15_V" lineNumber="41" originalName="tmp.data[15].V" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." bitwidth="27" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="41" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="res_V_data_0_V_write_ln50" lineNumber="50" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." opcode="write" nodeLabel="2.0" m_display="0" m_delay="1.45" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="50" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>res_V_data_0_V</dataOutputObjs>
+        <dataOutputObjs>res_V_data_1_V</dataOutputObjs>
+        <dataOutputObjs>res_V_data_2_V</dataOutputObjs>
+        <dataOutputObjs>res_V_data_3_V</dataOutputObjs>
+        <dataOutputObjs>res_V_data_4_V</dataOutputObjs>
+        <dataOutputObjs>res_V_data_5_V</dataOutputObjs>
+        <dataOutputObjs>res_V_data_6_V</dataOutputObjs>
+        <dataOutputObjs>res_V_data_7_V</dataOutputObjs>
+        <dataOutputObjs>res_V_data_8_V</dataOutputObjs>
+        <dataOutputObjs>res_V_data_9_V</dataOutputObjs>
+        <dataOutputObjs>res_V_data_10_V</dataOutputObjs>
+        <dataOutputObjs>res_V_data_11_V</dataOutputObjs>
+        <dataOutputObjs>res_V_data_12_V</dataOutputObjs>
+        <dataOutputObjs>res_V_data_13_V</dataOutputObjs>
+        <dataOutputObjs>res_V_data_14_V</dataOutputObjs>
+        <dataOutputObjs>res_V_data_15_V</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="_ln38" lineNumber="38" fileName="firmware/nnet_utils/nnet_activation_stream.h" fileDirectory=".." opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation_stream.h" linenumber="38" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="linear&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 5, 3, 0&amp;gt;, 16&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16&amp;gt;, linear_config8&amp;gt;"/>
+        <controlInputObjs>block_72</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_activation_stream.h">
+        <validLinenumbers>41</validLinenumbers>
+        <validLinenumbers>50</validLinenumbers>
+        <validLinenumbers>38</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <regnodes realName="i_0_reg_194">
+    <nodeIds>67</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_301">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln38_reg_297">
+    <nodeIds>68</nodeIds>
+  </regnodes>
+  <expressionNodes realName="tmp_data_7_V_fu_252">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_10_V_fu_267">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_8_V_fu_257">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_1_V_fu_222">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_2_V_fu_227">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_4_V_fu_237">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_5_V_fu_242">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_13_V_fu_282">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_211">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_12_V_fu_277">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_3_V_fu_232">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_9_V_fu_262">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_6_V_fu_247">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_0_V_fu_217">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln38_fu_205">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_0_phi_fu_198">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_14_V_fu_287">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_11_V_fu_272">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_15_V_fu_292">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="write_ln50_write_fu_142">
+    <nodeIds>93</nodeIds>
+  </ioNodes>
+  <ioNodes realName="empty_145_read_fu_106">
+    <nodeIds>76</nodeIds>
+  </ioNodes>
+  <ioPorts name="data_V_data_0_V">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_V_data_10_V">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_V_data_11_V">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_V_data_12_V">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_V_data_13_V">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_V_data_14_V">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_V_data_15_V">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_V_data_1_V">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_V_data_2_V">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_V_data_3_V">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_V_data_4_V">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_V_data_5_V">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_V_data_6_V">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_V_data_7_V">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_V_data_8_V">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_V_data_9_V">
+    <contents name="read">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_0_V">
+    <contents name="write">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_10_V">
+    <contents name="write">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_11_V">
+    <contents name="write">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_12_V">
+    <contents name="write">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_13_V">
+    <contents name="write">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_14_V">
+    <contents name="write">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_15_V">
+    <contents name="write">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_1_V">
+    <contents name="write">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_2_V">
+    <contents name="write">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_3_V">
+    <contents name="write">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_4_V">
+    <contents name="write">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_5_V">
+    <contents name="write">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_6_V">
+    <contents name="write">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_7_V">
+    <contents name="write">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_8_V">
+    <contents name="write">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res_V_data_9_V">
+    <contents name="write">
+      <nodeIds>93</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="97" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="258" mMaxLatency="258">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>66</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mII="1" mDepth="2" mMinTripCount="256" mMaxTripCount="256" mMinLatency="256" mMaxLatency="256" mType="1">
+      <basicBlocks>72</basicBlocks>
+      <basicBlocks>96</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>98</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

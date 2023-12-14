@@ -1,0 +1,158 @@
+
+
+================================================================
+== Vivado HLS Report for 'Block_proc'
+================================================================
+* Date:           Sat Aug  8 08:23:26 2020
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: virtexuplus
+* Target device:  xcu250-figd2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 1.458 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        2|        2| 10.000 ns | 10.000 ns |    2|    2|   none  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        0|        8|     -|
+|FIFO                 |        -|      -|        -|        -|     -|
+|Instance             |        -|      -|        -|        -|     -|
+|Memory               |        -|      -|        -|        -|     -|
+|Multiplexer          |        -|      -|        -|      123|     -|
+|Register             |        -|      -|     1031|        -|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|      0|     1031|      131|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|      0|    ~0   |    ~0   |     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|      0|    ~0   |    ~0   |     0|
++---------------------+---------+-------+---------+---------+------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+-------+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+-------+---+----+------------+------------+
+    |io_acc_block_signal_op12  |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state1           |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state1_io        |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state3_io        |    or    |      0|  0|   2|           1|           1|
+    +--------------------------+----------+-------+---+----+------------+------------+
+    |Total                     |          |      0|  0|   8|           4|           4|
+    +--------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------+----+-----------+------+-----------+
+    |            Name            | LUT| Input Size| Bits | Total Bits|
+    +----------------------------+----+-----------+------+-----------+
+    |ap_NS_fsm                   |  27|          5|     1|          5|
+    |ap_done                     |   9|          2|     1|          2|
+    |out_local_V_data_0_V_blk_n  |   9|          2|     1|          2|
+    |out_local_V_data_1_V_blk_n  |   9|          2|     1|          2|
+    |out_r_TDATA_blk_n           |   9|          2|     1|          2|
+    |out_r_TDATA_int             |  27|          5|  1024|       5120|
+    |out_r_TLAST_int             |  15|          3|     1|          3|
+    |should_skip_0_loc_blk_n     |   9|          2|     1|          2|
+    |val_assign_loc_blk_n        |   9|          2|     1|          2|
+    +----------------------------+----+-----------+------+-----------+
+    |Total                       | 123|         25|  1032|       5140|
+    +----------------------------+----+-----------+------+-----------+
+
+    * Register: 
+    +-------------------------------+------+----+------+-----------+
+    |              Name             |  FF  | LUT| Bits | Const Bits|
+    +-------------------------------+------+----+------+-----------+
+    |ap_CS_fsm                      |     4|   0|     4|          0|
+    |ap_done_reg                    |     1|   0|     1|          0|
+    |should_skip_0_loc_read_reg_88  |     1|   0|     1|          0|
+    |tmp_data_1_V_reg_102           |  1024|   0|  1024|          0|
+    |val_assign_loc_read_reg_92     |     1|   0|     1|          0|
+    +-------------------------------+------+----+------+-----------+
+    |Total                          |  1031|   0|  1031|          0|
+    +-------------------------------+------+----+------+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+------+------------+----------------------+--------------+
+|           RTL Ports          | Dir | Bits |  Protocol  |     Source Object    |    C Type    |
++------------------------------+-----+------+------------+----------------------+--------------+
+|ap_clk                        |  in |     1| ap_ctrl_hs |      Block__proc     | return value |
+|ap_rst                        |  in |     1| ap_ctrl_hs |      Block__proc     | return value |
+|ap_start                      |  in |     1| ap_ctrl_hs |      Block__proc     | return value |
+|ap_done                       | out |     1| ap_ctrl_hs |      Block__proc     | return value |
+|ap_continue                   |  in |     1| ap_ctrl_hs |      Block__proc     | return value |
+|ap_idle                       | out |     1| ap_ctrl_hs |      Block__proc     | return value |
+|ap_ready                      | out |     1| ap_ctrl_hs |      Block__proc     | return value |
+|out_local_V_data_0_V_dout     |  in |  1024|   ap_fifo  | out_local_V_data_0_V |    pointer   |
+|out_local_V_data_0_V_empty_n  |  in |     1|   ap_fifo  | out_local_V_data_0_V |    pointer   |
+|out_local_V_data_0_V_read     | out |     1|   ap_fifo  | out_local_V_data_0_V |    pointer   |
+|out_local_V_data_1_V_dout     |  in |  1024|   ap_fifo  | out_local_V_data_1_V |    pointer   |
+|out_local_V_data_1_V_empty_n  |  in |     1|   ap_fifo  | out_local_V_data_1_V |    pointer   |
+|out_local_V_data_1_V_read     | out |     1|   ap_fifo  | out_local_V_data_1_V |    pointer   |
+|should_skip_0_loc_dout        |  in |     1|   ap_fifo  |   should_skip_0_loc  |    pointer   |
+|should_skip_0_loc_empty_n     |  in |     1|   ap_fifo  |   should_skip_0_loc  |    pointer   |
+|should_skip_0_loc_read        | out |     1|   ap_fifo  |   should_skip_0_loc  |    pointer   |
+|out_r_TDATA                   | out |  1024|    axis    |      out_data_V      |    pointer   |
+|out_r_TVALID                  | out |     1|    axis    |      out_last_V      |    pointer   |
+|out_r_TREADY                  |  in |     1|    axis    |      out_last_V      |    pointer   |
+|out_r_TLAST                   | out |     1|    axis    |      out_last_V      |    pointer   |
+|val_assign_loc_dout           |  in |     1|   ap_fifo  |    val_assign_loc    |    pointer   |
+|val_assign_loc_empty_n        |  in |     1|   ap_fifo  |    val_assign_loc    |    pointer   |
+|val_assign_loc_read           | out |     1|   ap_fifo  |    val_assign_loc    |    pointer   |
++------------------------------+-----+------+------------+----------------------+--------------+
+

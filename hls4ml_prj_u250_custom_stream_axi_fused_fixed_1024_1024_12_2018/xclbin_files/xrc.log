@@ -1,0 +1,13 @@
+Sat Aug  8 08:25:02 2020: Server was asked to start on port: '35044'
+Sat Aug  8 08:25:02 2020: Server is using token UUID: '0386186e-e342-416b-9612-7a5610b02ddf'
+Sat Aug  8 08:25:02 2020: Attempting to start server on port '35044'
+Sat Aug  8 08:25:02 2020: XRC main fifo: created main fifo '/tmp/xrcmain0386186e-e342-416b-9612-7a5610b02ddf', fd read = 17
+Sat Aug  8 08:25:02 2020: Running Rule Check Server
+Sat Aug  8 08:25:02 2020: Version 1.6.1
+Sat Aug  8 08:25:03 2020: Rule Check Server: Accepted socket connection from client
+Sat Aug  8 08:25:03 2020: EXCHANGE_TOKEN received, server token: 0386186e-e342-416b-9612-7a5610b02ddf, passed token: 0386186e-e342-416b-9612-7a5610b02ddf
+Sat Aug  8 08:25:03 2020: SESSION_MGR: creating session with session uuid: 'ad0bcd28-7d5a-466e-a60a-8f002bbf49aa' and name 'v++_link_myproject_kernel'
+Sat Aug  8 08:25:16 2020: Rule Check Server: Accepted socket connection from client
+Sat Aug  8 08:26:10 2020: Rule Check Server: Accepted socket connection from client
+Sat Aug  8 09:12:54 2020: Rule Check Server: Accepted socket connection from client
+Sat Aug  8 11:40:01 2020: SESSION_MGR: closing session for UUID 'ad0bcd28-7d5a-466e-a60a-8f002bbf49aa' with name 'v++_link_myproject_kernel'

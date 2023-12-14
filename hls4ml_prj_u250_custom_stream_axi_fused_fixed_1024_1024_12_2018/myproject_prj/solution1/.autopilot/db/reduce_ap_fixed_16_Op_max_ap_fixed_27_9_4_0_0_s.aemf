@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1697246612000">
+  <ports id="1" name="x_0_V_read" type="PortType" originalName="x[0].V" bitwidth="27">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="x_1_V_read" type="PortType" originalName="x[1].V" bitwidth="27">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="x_2_V_read" type="PortType" originalName="x[2].V" bitwidth="27">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="x_3_V_read" type="PortType" originalName="x[3].V" bitwidth="27">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="x_4_V_read" type="PortType" originalName="x[4].V" bitwidth="27">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="x_5_V_read" type="PortType" originalName="x[5].V" bitwidth="27">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="x_6_V_read" type="PortType" originalName="x[6].V" bitwidth="27">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="x_7_V_read" type="PortType" originalName="x[7].V" bitwidth="27">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="9" name="x_8_V_read" type="PortType" originalName="x[8].V" bitwidth="27">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="10" name="x_9_V_read" type="PortType" originalName="x[9].V" bitwidth="27">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="11" name="x_10_V_read" type="PortType" originalName="x[10].V" bitwidth="27">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="12" name="x_11_V_read" type="PortType" originalName="x[11].V" bitwidth="27">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="13" name="x_12_V_read" type="PortType" originalName="x[12].V" bitwidth="27">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="14" name="x_13_V_read" type="PortType" originalName="x[13].V" bitwidth="27">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="15" name="x_14_V_read" type="PortType" originalName="x[14].V" bitwidth="27">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="16" name="x_15_V_read" type="PortType" originalName="x[15].V" bitwidth="27">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="26" name="ap_return" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="67" source_obj="//@ports.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="69" source_obj="//@ports.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="71" source_obj="//@ports.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="73" source_obj="//@ports.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="75" source_obj="//@ports.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="77" source_obj="//@ports.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="79" source_obj="//@ports.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="81" source_obj="//@ports.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="83" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="85" source_obj="//@ports.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="87" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="89" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="91" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="93" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="95" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="97" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
+  <edges id="98" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="99" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="100" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="102" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="105" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="107" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="109" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="110" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
+  <edges id="111" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
+  <edges id="113" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
+  <edges id="114" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
+  <edges id="115" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="116" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="117" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="118" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
+  <edges id="119" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
+  <edges id="120" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.25"/>
+  <edges id="121" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.25"/>
+  <edges id="122" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.25"/>
+  <edges id="123" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.26"/>
+  <edges id="124" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.26"/>
+  <edges id="125" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="126" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="127" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="128" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.28"/>
+  <edges id="129" source_obj="//@regions.0/@basic_blocks.0/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.28"/>
+  <edges id="130" source_obj="//@regions.0/@basic_blocks.0/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.29"/>
+  <edges id="131" source_obj="//@regions.0/@basic_blocks.0/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.29"/>
+  <edges id="132" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.29"/>
+  <edges id="133" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.30"/>
+  <edges id="134" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.30"/>
+  <edges id="135" source_obj="//@regions.0/@basic_blocks.0/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.31"/>
+  <edges id="136" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.31"/>
+  <edges id="137" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.31"/>
+  <edges id="138" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.32"/>
+  <edges id="139" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.32"/>
+  <edges id="140" source_obj="//@regions.0/@basic_blocks.0/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.33"/>
+  <edges id="141" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.33"/>
+  <edges id="142" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.33"/>
+  <edges id="143" source_obj="//@regions.0/@basic_blocks.0/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.34"/>
+  <edges id="144" source_obj="//@regions.0/@basic_blocks.0/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.34"/>
+  <edges id="145" source_obj="//@regions.0/@basic_blocks.0/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.35"/>
+  <edges id="146" source_obj="//@regions.0/@basic_blocks.0/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.35"/>
+  <edges id="147" source_obj="//@regions.0/@basic_blocks.0/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.35"/>
+  <edges id="148" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.36"/>
+  <edges id="149" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.36"/>
+  <edges id="150" source_obj="//@regions.0/@basic_blocks.0/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.37"/>
+  <edges id="151" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.37"/>
+  <edges id="152" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.37"/>
+  <edges id="153" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.38"/>
+  <edges id="154" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.38"/>
+  <edges id="155" source_obj="//@regions.0/@basic_blocks.0/@node_objs.38" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.39"/>
+  <edges id="156" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.39"/>
+  <edges id="157" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.39"/>
+  <edges id="158" source_obj="//@regions.0/@basic_blocks.0/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.40"/>
+  <edges id="159" source_obj="//@regions.0/@basic_blocks.0/@node_objs.39" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.40"/>
+  <edges id="160" source_obj="//@regions.0/@basic_blocks.0/@node_objs.40" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="161" source_obj="//@regions.0/@basic_blocks.0/@node_objs.39" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="162" source_obj="//@regions.0/@basic_blocks.0/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="163" source_obj="//@regions.0/@basic_blocks.0/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="164" source_obj="//@regions.0/@basic_blocks.0/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="165" source_obj="//@regions.0/@basic_blocks.0/@node_objs.42" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="166" source_obj="//@regions.0/@basic_blocks.0/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="167" source_obj="//@regions.0/@basic_blocks.0/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="168" source_obj="//@regions.0/@basic_blocks.0/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="169" source_obj="//@regions.0/@basic_blocks.0/@node_objs.43" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="170" source_obj="//@regions.0/@basic_blocks.0/@node_objs.44" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="171" source_obj="//@regions.0/@basic_blocks.0/@node_objs.43" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="172" source_obj="//@regions.0/@basic_blocks.0/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="173" source_obj="//@regions.0/@basic_blocks.0/@node_objs.45" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.46"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.46" sink_obj="//@ports.16"/>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="210" pipe_depth="2" RegionName="reduce&lt;ap_fixed,16,Op_max&lt;ap_fixed&lt;27,9,4,0,0>>>">
+    <basic_blocks id="64" name="reduce&lt;ap_fixed,16,Op_max&lt;ap_fixed&lt;27,9,4,0,0>>>" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="x_15_V_read_1" lineNumber="45" originalName="x[15].V" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." bitwidth="27" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>x_15_V_read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="x_14_V_read_1" lineNumber="45" originalName="x[14].V" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." bitwidth="27" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>x_14_V_read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="x_13_V_read_1" lineNumber="45" originalName="x[13].V" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." bitwidth="27" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>x_13_V_read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="x_12_V_read_1" lineNumber="45" originalName="x[12].V" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." bitwidth="27" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>x_12_V_read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="x_11_V_read_1" lineNumber="45" originalName="x[11].V" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." bitwidth="27" opcode="read" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>x_11_V_read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="x_10_V_read_1" lineNumber="45" originalName="x[10].V" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." bitwidth="27" opcode="read" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>x_10_V_read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="x_9_V_read_1" lineNumber="45" originalName="x[9].V" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." bitwidth="27" opcode="read" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>x_9_V_read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="x_8_V_read_1" lineNumber="45" originalName="x[8].V" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." bitwidth="27" opcode="read" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>x_8_V_read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="x_7_V_read_2" lineNumber="45" originalName="x[7].V" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." bitwidth="27" opcode="read" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>x_7_V_read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="x_6_V_read_2" lineNumber="45" originalName="x[6].V" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." bitwidth="27" opcode="read" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>x_6_V_read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="x_5_V_read_2" lineNumber="45" originalName="x[5].V" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." bitwidth="27" opcode="read" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>x_5_V_read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="x_4_V_read_2" lineNumber="45" originalName="x[4].V" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." bitwidth="27" opcode="read" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>x_4_V_read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="x_3_V_read_2" lineNumber="45" originalName="x[3].V" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." bitwidth="27" opcode="read" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>x_3_V_read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="x_2_V_read_2" lineNumber="45" originalName="x[2].V" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." bitwidth="27" opcode="read" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>x_2_V_read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="x_1_V_read_2" lineNumber="45" originalName="x[1].V" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." bitwidth="27" opcode="read" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>x_1_V_read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="x_0_V_read_2" lineNumber="45" originalName="x[0].V" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." bitwidth="27" opcode="read" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>x_0_V_read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="icmp_ln1496" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="icmp_ln1496_fu_130_p2" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.8" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="53" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="select_ln86" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="select_ln86_fu_136_p3" bitwidth="27" opcode="select" m_display="0" m_delay="0.33" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="53" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="icmp_ln1496_7" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="icmp_ln1496_7_fu_144_p2" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.8" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="53" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="select_ln86_7" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="select_ln86_7_fu_150_p3" bitwidth="27" opcode="select" m_display="0" m_delay="0.33" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="53" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="icmp_ln1496_8" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="icmp_ln1496_8_fu_158_p2" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.8" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="select_ln86_8" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="select_ln86_8_fu_164_p3" bitwidth="27" opcode="select" m_display="0" m_delay="0.33" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="icmp_ln1496_9" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="icmp_ln1496_9_fu_172_p2" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.8" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="53" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="select_ln86_9" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="select_ln86_9_fu_178_p3" bitwidth="27" opcode="select" m_display="0" m_delay="0.33" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="53" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="icmp_ln1496_10" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="icmp_ln1496_10_fu_186_p2" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.8" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="53" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="select_ln86_10" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="select_ln86_10_fu_192_p3" bitwidth="27" opcode="select" m_display="0" m_delay="0.33" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="53" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="icmp_ln1496_11" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="icmp_ln1496_11_fu_200_p2" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.8" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="select_ln86_11" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="select_ln86_11_fu_206_p3" bitwidth="27" opcode="select" m_display="0" m_delay="0.33" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="icmp_ln1496_12" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="icmp_ln1496_12_fu_214_p2" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.8" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="select_ln86_12" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="select_ln86_12_fu_220_p3" bitwidth="27" opcode="select" m_display="0" m_delay="0.33" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="icmp_ln1496_13" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="icmp_ln1496_13_fu_228_p2" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.8" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="53" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="select_ln86_13" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="select_ln86_13_fu_234_p3" bitwidth="27" opcode="select" m_display="0" m_delay="0.33" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="53" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="icmp_ln1496_14" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="icmp_ln1496_14_fu_242_p2" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.8" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="53" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="select_ln86_14" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="select_ln86_14_fu_248_p3" bitwidth="27" opcode="select" m_display="0" m_delay="0.33" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="53" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="icmp_ln1496_15" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="icmp_ln1496_15_fu_256_p2" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.8" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="select_ln86_15" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="select_ln86_15_fu_262_p3" bitwidth="27" opcode="select" m_display="0" m_delay="0.33" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="icmp_ln1496_16" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="icmp_ln1496_16_fu_270_p2" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.8" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="53" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="select_ln86_16" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="select_ln86_16_fu_276_p3" bitwidth="27" opcode="select" m_display="0" m_delay="0.33" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="53" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="icmp_ln1496_17" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="icmp_ln1496_17_fu_284_p2" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.8" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="53" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="select_ln86_17" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="select_ln86_17_fu_290_p3" bitwidth="27" opcode="select" m_display="0" m_delay="0.33" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="53" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="icmp_ln1496_18" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="icmp_ln1496_18_fu_298_p2" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.8" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="select_ln86_18" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="select_ln86_18_fu_304_p3" bitwidth="27" opcode="select" m_display="0" m_delay="0.33" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="icmp_ln1496_19" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="icmp_ln1496_19_fu_312_p2" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.8" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="select_ln86_19" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="select_ln86_19_fu_318_p3" bitwidth="27" opcode="select" m_display="0" m_delay="0.33" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 8, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="icmp_ln1496_20" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="icmp_ln1496_20_fu_326_p2" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.8" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="select_ln86_20" lineNumber="86" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." rtlName="select_ln86_20_fu_330_p3" bitwidth="27" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.33" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="86" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>ret</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="_ln55" lineNumber="55" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory=".." opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="55" fileDirectory="/mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12" functionName="reduce&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt;, 16, nnet::Op_max&amp;lt;ap_fixed&amp;lt;27, 9, 4, 0, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>ap_return</dataOutputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_common.h">
+        <validLinenumbers>45</validLinenumbers>
+        <validLinenumbers>86</validLinenumbers>
+        <validLinenumbers>55</validLinenumbers>
+        <validLinenumbers>53</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="select_ln86_19_reg_342">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln86_12_reg_336">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <expressionNodes realName="select_ln86_19_fu_318">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1496_17_fu_284">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1496_7_fu_144">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln86_8_fu_164">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln86_10_fu_192">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1496_12_fu_214">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln86_11_fu_206">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln86_fu_136">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1496_9_fu_172">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1496_15_fu_256">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln86_14_fu_248">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln86_15_fu_262">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln86_12_fu_220">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1496_19_fu_312">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln86_18_fu_304">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln86_7_fu_150">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1496_18_fu_298">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1496_8_fu_158">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1496_16_fu_270">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln86_9_fu_178">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1496_fu_130">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1496_10_fu_186">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1496_11_fu_200">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1496_13_fu_228">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln86_17_fu_290">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1496_20_fu_326">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln86_13_fu_234">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1496_14_fu_242">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln86_20_fu_330">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln86_16_fu_276">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="x_2_V_read_2_read_fu_112">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_7_V_read_2_read_fu_82">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_10_V_read_1_read_fu_64">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_14_V_read_1_read_fu_40">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_11_V_read_1_read_fu_58">
+    <nodeIds>21</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_3_V_read_2_read_fu_106">
+    <nodeIds>29</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_4_V_read_2_read_fu_100">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_15_V_read_1_read_fu_34">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_1_V_read_2_read_fu_118">
+    <nodeIds>31</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_5_V_read_2_read_fu_94">
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_8_V_read_1_read_fu_76">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_9_V_read_1_read_fu_70">
+    <nodeIds>23</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_6_V_read_2_read_fu_88">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_0_V_read_2_read_fu_124">
+    <nodeIds>32</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_12_V_read_1_read_fu_52">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_13_V_read_1_read_fu_46">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioPorts name="x_0_V_read">
+    <contents name="read">
+      <nodeIds>32</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x_10_V_read">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x_11_V_read">
+    <contents name="read">
+      <nodeIds>21</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x_12_V_read">
+    <contents name="read">
+      <nodeIds>20</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x_13_V_read">
+    <contents name="read">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x_14_V_read">
+    <contents name="read">
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x_15_V_read">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x_1_V_read">
+    <contents name="read">
+      <nodeIds>31</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x_2_V_read">
+    <contents name="read">
+      <nodeIds>30</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x_3_V_read">
+    <contents name="read">
+      <nodeIds>29</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x_4_V_read">
+    <contents name="read">
+      <nodeIds>28</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x_5_V_read">
+    <contents name="read">
+      <nodeIds>27</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x_6_V_read">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x_7_V_read">
+    <contents name="read">
+      <nodeIds>25</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x_8_V_read">
+    <contents name="read">
+      <nodeIds>24</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x_9_V_read">
+    <contents name="read">
+      <nodeIds>23</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return">
+    <contents name="ret">
+      <nodeIds>63</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mII="1" mDepth="2" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
+      <basicBlocks>64</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

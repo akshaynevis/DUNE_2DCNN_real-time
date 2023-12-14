@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Aug  8 08:23:47 2020
+# Process ID: 54830
+# Current directory: /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/myproject_prj/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/myproject_prj/solution1/impl/ip/vivado.log
+# Journal file: /mnt/storage1/akshaymalige/demo_new/rt_detect_le_events_dune-main/out/classifier_2d_s544_o2_i64_480_1_c32_64_1_q/le/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12/myproject_prj/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

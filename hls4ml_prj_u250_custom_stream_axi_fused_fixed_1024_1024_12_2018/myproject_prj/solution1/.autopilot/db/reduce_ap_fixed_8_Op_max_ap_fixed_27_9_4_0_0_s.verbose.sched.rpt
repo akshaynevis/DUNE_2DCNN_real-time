@@ -1,0 +1,137 @@
+
+
+================================================================
+== Vivado HLS Report for 'reduce_ap_fixed_8_Op_max_ap_fixed_27_9_4_0_0_s'
+================================================================
+* Date:           Sat Aug  8 08:21:30 2020
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: virtexuplus
+* Target device:  xcu250-figd2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 3.406 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.40>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%x_7_V_read_1 = call i27 @_ssdm_op_Read.ap_auto.i27(i27 %x_7_V_read)" [firmware/nnet_utils/nnet_common.h:45]   --->   Operation 2 'read' 'x_7_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%x_6_V_read_1 = call i27 @_ssdm_op_Read.ap_auto.i27(i27 %x_6_V_read)" [firmware/nnet_utils/nnet_common.h:45]   --->   Operation 3 'read' 'x_6_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%x_5_V_read_1 = call i27 @_ssdm_op_Read.ap_auto.i27(i27 %x_5_V_read)" [firmware/nnet_utils/nnet_common.h:45]   --->   Operation 4 'read' 'x_5_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%x_4_V_read_1 = call i27 @_ssdm_op_Read.ap_auto.i27(i27 %x_4_V_read)" [firmware/nnet_utils/nnet_common.h:45]   --->   Operation 5 'read' 'x_4_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%x_3_V_read_1 = call i27 @_ssdm_op_Read.ap_auto.i27(i27 %x_3_V_read)" [firmware/nnet_utils/nnet_common.h:45]   --->   Operation 6 'read' 'x_3_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%x_2_V_read_1 = call i27 @_ssdm_op_Read.ap_auto.i27(i27 %x_2_V_read)" [firmware/nnet_utils/nnet_common.h:45]   --->   Operation 7 'read' 'x_2_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%x_1_V_read_1 = call i27 @_ssdm_op_Read.ap_auto.i27(i27 %x_1_V_read)" [firmware/nnet_utils/nnet_common.h:45]   --->   Operation 8 'read' 'x_1_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%x_0_V_read_1 = call i27 @_ssdm_op_Read.ap_auto.i27(i27 %x_0_V_read)" [firmware/nnet_utils/nnet_common.h:45]   --->   Operation 9 'read' 'x_0_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.80ns)   --->   "%icmp_ln1496 = icmp slt i27 %x_0_V_read_1, %x_1_V_read_1" [firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:53->firmware/nnet_utils/nnet_common.h:55->firmware/nnet_utils/nnet_common.h:55]   --->   Operation 10 'icmp' 'icmp_ln1496' <Predicate = true> <Delay = 0.80> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.33ns)   --->   "%select_ln86 = select i1 %icmp_ln1496, i27 %x_1_V_read_1, i27 %x_0_V_read_1" [firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:53->firmware/nnet_utils/nnet_common.h:55->firmware/nnet_utils/nnet_common.h:55]   --->   Operation 11 'select' 'select_ln86' <Predicate = true> <Delay = 0.33> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.80ns)   --->   "%icmp_ln1496_1 = icmp slt i27 %x_2_V_read_1, %x_3_V_read_1" [firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:53->firmware/nnet_utils/nnet_common.h:55->firmware/nnet_utils/nnet_common.h:55]   --->   Operation 12 'icmp' 'icmp_ln1496_1' <Predicate = true> <Delay = 0.80> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (0.33ns)   --->   "%select_ln86_1 = select i1 %icmp_ln1496_1, i27 %x_3_V_read_1, i27 %x_2_V_read_1" [firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:53->firmware/nnet_utils/nnet_common.h:55->firmware/nnet_utils/nnet_common.h:55]   --->   Operation 13 'select' 'select_ln86_1' <Predicate = true> <Delay = 0.33> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.80ns)   --->   "%icmp_ln1496_2 = icmp slt i27 %select_ln86, %select_ln86_1" [firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:55->firmware/nnet_utils/nnet_common.h:55]   --->   Operation 14 'icmp' 'icmp_ln1496_2' <Predicate = true> <Delay = 0.80> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (0.33ns)   --->   "%select_ln86_2 = select i1 %icmp_ln1496_2, i27 %select_ln86_1, i27 %select_ln86" [firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:55->firmware/nnet_utils/nnet_common.h:55]   --->   Operation 15 'select' 'select_ln86_2' <Predicate = true> <Delay = 0.33> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.80ns)   --->   "%icmp_ln1496_3 = icmp slt i27 %x_4_V_read_1, %x_5_V_read_1" [firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:53->firmware/nnet_utils/nnet_common.h:55->firmware/nnet_utils/nnet_common.h:55]   --->   Operation 16 'icmp' 'icmp_ln1496_3' <Predicate = true> <Delay = 0.80> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.33ns)   --->   "%select_ln86_3 = select i1 %icmp_ln1496_3, i27 %x_5_V_read_1, i27 %x_4_V_read_1" [firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:53->firmware/nnet_utils/nnet_common.h:55->firmware/nnet_utils/nnet_common.h:55]   --->   Operation 17 'select' 'select_ln86_3' <Predicate = true> <Delay = 0.33> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 18 [1/1] (0.80ns)   --->   "%icmp_ln1496_4 = icmp slt i27 %x_6_V_read_1, %x_7_V_read_1" [firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:53->firmware/nnet_utils/nnet_common.h:55->firmware/nnet_utils/nnet_common.h:55]   --->   Operation 18 'icmp' 'icmp_ln1496_4' <Predicate = true> <Delay = 0.80> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.33ns)   --->   "%select_ln86_4 = select i1 %icmp_ln1496_4, i27 %x_7_V_read_1, i27 %x_6_V_read_1" [firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:53->firmware/nnet_utils/nnet_common.h:55->firmware/nnet_utils/nnet_common.h:55]   --->   Operation 19 'select' 'select_ln86_4' <Predicate = true> <Delay = 0.33> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.80ns)   --->   "%icmp_ln1496_5 = icmp slt i27 %select_ln86_3, %select_ln86_4" [firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:55->firmware/nnet_utils/nnet_common.h:55]   --->   Operation 20 'icmp' 'icmp_ln1496_5' <Predicate = true> <Delay = 0.80> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.33ns)   --->   "%select_ln86_5 = select i1 %icmp_ln1496_5, i27 %select_ln86_4, i27 %select_ln86_3" [firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:55->firmware/nnet_utils/nnet_common.h:55]   --->   Operation 21 'select' 'select_ln86_5' <Predicate = true> <Delay = 0.33> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.80ns)   --->   "%icmp_ln1496_6 = icmp slt i27 %select_ln86_2, %select_ln86_5" [firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:55]   --->   Operation 22 'icmp' 'icmp_ln1496_6' <Predicate = true> <Delay = 0.80> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.33ns)   --->   "%select_ln86_6 = select i1 %icmp_ln1496_6, i27 %select_ln86_5, i27 %select_ln86_2" [firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:55]   --->   Operation 23 'select' 'select_ln86_6' <Predicate = true> <Delay = 0.33> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "ret i27 %select_ln86_6" [firmware/nnet_utils/nnet_common.h:55]   --->   Operation 24 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 3.41ns
+The critical path consists of the following:
+	wire read on port 'x_7_V_read' (firmware/nnet_utils/nnet_common.h:45) [9]  (0 ns)
+	'icmp' operation ('icmp_ln1496_4', firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:53->firmware/nnet_utils/nnet_common.h:55->firmware/nnet_utils/nnet_common.h:55) [25]  (0.802 ns)
+	'select' operation ('select_ln86_4', firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:53->firmware/nnet_utils/nnet_common.h:55->firmware/nnet_utils/nnet_common.h:55) [26]  (0.334 ns)
+	'icmp' operation ('icmp_ln1496_5', firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:55->firmware/nnet_utils/nnet_common.h:55) [27]  (0.802 ns)
+	'select' operation ('select_ln86_5', firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:55->firmware/nnet_utils/nnet_common.h:55) [28]  (0.334 ns)
+	'icmp' operation ('icmp_ln1496_6', firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:55) [29]  (0.802 ns)
+	'select' operation ('select_ln86_6', firmware/nnet_utils/nnet_common.h:86->firmware/nnet_utils/nnet_common.h:55) [30]  (0.334 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

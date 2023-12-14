@@ -1,0 +1,79 @@
+Sat Aug  8 08:24:52 2020: Server was asked to start on port: '40234'
+Sat Aug  8 08:24:52 2020: Server is using token UUID: '6302697e-5d8b-479d-924d-f37e91f52d67'
+Sat Aug  8 08:24:52 2020: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sat Aug  8 08:24:52 2020: Attempting to start server on port '40234'
+Sat Aug  8 08:24:52 2020: XCD main fifo: created main fifo '/tmp/xcdmain6302697e-5d8b-479d-924d-f37e91f52d67', fd read = 17
+Sat Aug  8 08:24:52 2020: Running Dispatch Server
+Sat Aug  8 08:24:52 2020: Version 2.0.0
+Sat Aug  8 08:25:01 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:25:01 2020: EXCHANGE_TOKEN received, server token: 6302697e-5d8b-479d-924d-f37e91f52d67, passed token: 6302697e-5d8b-479d-924d-f37e91f52d67
+Sat Aug  8 08:25:01 2020: SESSION_MGR: creating session with session uuid: '7c20d47d-a0a3-4f3a-890d-c6f460d768d7' and name 'v++_link_myproject_kernel'
+Sat Aug  8 08:25:33 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:25:37 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:26:10 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:31:54 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:31:54 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:31:54 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:31:54 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:31:54 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:31:54 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:31:54 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:31:54 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:32:29 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:32:29 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:32:29 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:32:29 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:32:29 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:33:05 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:33:05 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:33:05 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:33:05 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:33:06 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:33:40 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:33:40 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:33:40 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:33:41 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:33:41 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:34:16 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:34:16 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:34:16 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:34:17 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:34:18 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:34:51 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:47:46 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:52:32 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:57:38 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:58:12 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:58:48 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:59:23 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 08:59:59 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:00:34 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:01:09 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:01:44 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:02:19 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:02:54 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:03:30 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:04:06 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:04:41 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:05:16 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:05:51 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:06:27 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:07:02 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:07:37 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:08:12 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:08:47 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:09:23 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:09:58 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:10:33 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:11:08 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:11:43 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:12:19 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:12:54 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 09:26:39 2020: Entering handleUtilizationDuringVivadoRunRequest
+Sat Aug  8 09:26:39 2020: Leaving handleUtilizationDuringVivadoRunRequest
+Sat Aug  8 10:18:01 2020: Entering handleUtilizationDuringVivadoRunRequest
+Sat Aug  8 10:18:01 2020: Leaving handleUtilizationDuringVivadoRunRequest
+Sat Aug  8 11:20:36 2020: Entering handleUtilizationDuringVivadoRunRequest
+Sat Aug  8 11:20:36 2020: Leaving handleUtilizationDuringVivadoRunRequest
+Sat Aug  8 11:40:00 2020: Dispatch Server: Accepted socket connection from client
+Sat Aug  8 11:40:01 2020: SESSION_MGR: closing session for UUID '7c20d47d-a0a3-4f3a-890d-c6f460d768d7' with name 'v++_link_myproject_kernel'

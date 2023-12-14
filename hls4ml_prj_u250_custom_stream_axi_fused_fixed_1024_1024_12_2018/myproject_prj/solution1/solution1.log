@@ -1,0 +1,1362 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+INFO: [HLS 200-10] Setting target device to 'xcu250-figd2104-2L-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'firmware/myproject.cpp' ... 
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:58:70
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:58:74
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:74:74
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:74:78
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:86:70
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:86:75
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:94:72
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:94:77
+WARNING: [HLS 200-471] Dataflow form checks found 8 issue(s) in file firmware/myproject.cpp
+INFO: [HLS 200-10] Analyzing design file 'firmware/myproject_axi.cpp' ... 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/myproject_axi.cpp:30:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/myproject_axi.cpp:445:5
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/myproject_axi.cpp:476:5
+WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file firmware/myproject_axi.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1760.301 ; gain = 1231.883 ; free physical = 139530 ; free virtual = 172322
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1760.301 ; gain = 1231.883 ; free physical = 139530 ; free virtual = 172322
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-489] Unrolling loop 'LineBufferShift' (firmware/nnet_utils/nnet_conv_stream.h:229) in function 'void nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, config6>(FORWARD_REFERENCE const&, ap_shift_reg<FORWARD_REFERENCE::value_type, FORWARD_REFERENCE::in_width> (*) [FORWARD_REFERENCE::n_chan], FORWARD_REFERENCE::value_type*)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'UpdateBuffer' (firmware/nnet_utils/nnet_conv_stream.h:220) in function 'void nnet::shift_line_buffer<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, config4>(FORWARD_REFERENCE const&, ap_shift_reg<FORWARD_REFERENCE::value_type, FORWARD_REFERENCE::in_width> (*) [FORWARD_REFERENCE::n_chan], FORWARD_REFERENCE::value_type*)' completely with a factor of 1.
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>::operator[].1' into 'myproject_axi' (firmware/myproject_axi.cpp:466).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>::operator[]' into 'nnet::shift_line_buffer<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, config4>' (firmware/nnet_utils/nnet_conv_stream.h:224).
+INFO: [XFORM 203-603] Inlining function 'nnet::kernel_shift_2d<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, config4>' into 'nnet::shift_line_buffer<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, config4>' (firmware/nnet_utils/nnet_conv_stream.h:235).
+INFO: [XFORM 203-603] Inlining function 'nnet::product::mult<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<6, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >::product' into 'nnet::dense_resource_rf_leq_nin<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_mult>' (firmware/nnet_utils/nnet_dense_resource.h:77).
+INFO: [XFORM 203-603] Inlining function 'nnet::dense_resource_rf_leq_nin<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_mult>' into 'nnet::dense_resource<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_mult>' (firmware/nnet_utils/nnet_dense_resource.h:276).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>::operator[].1' into 'nnet::compute_output_buffer_2d<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>' (firmware/nnet_utils/nnet_conv_stream.h:285).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>::operator[].1' into 'nnet::compute_pool_buffer_2d<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config6>' (firmware/nnet_utils/nnet_pooling_stream.h:195).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>::operator[].1' into 'nnet::fill_data<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' (firmware/nnet_utils/nnet_padding_stream.h:26).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>::operator[].1' into 'nnet::fill_data<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' (firmware/nnet_utils/nnet_padding_stream.h:26).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>::operator[].1' into 'nnet::fill_zero<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' (firmware/nnet_utils/nnet_padding_stream.h:14).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>::operator[].1' into 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, linear_config5>' (firmware/nnet_utils/nnet_activation_stream.h:47).
+INFO: [XFORM 203-603] Inlining function 'nnet::dense_resource<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_mult>' into 'nnet::compute_output_buffer_2d<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>' (firmware/nnet_utils/nnet_conv_stream.h:279).
+INFO: [XFORM 203-603] Inlining function 'nnet::compute_output_buffer_2d<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>' into 'nnet::conv_2d_buffer_cl<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>' (firmware/nnet_utils/nnet_conv2d_stream.h:85).
+INFO: [XFORM 203-603] Inlining function 'nnet::conv_2d_buffer_cl<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>' into 'nnet::conv_2d_cl<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>' (firmware/nnet_utils/nnet_conv2d_stream.h:103).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>::operator[].1' into 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, linear_config5>' (firmware/nnet_utils/nnet_activation_stream.h:47).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>::operator[]' into 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, config6>' (firmware/nnet_utils/nnet_conv_stream.h:224).
+INFO: [XFORM 203-603] Inlining function 'nnet::kernel_shift_2d<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, config6>' into 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, config6>' (firmware/nnet_utils/nnet_conv_stream.h:235).
+INFO: [XFORM 203-603] Inlining function 'nnet::reduce_pool<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8, config6>' into 'nnet::compute_pool_buffer_2d<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config6>' (firmware/nnet_utils/nnet_pooling_stream.h:195).
+INFO: [XFORM 203-603] Inlining function 'nnet::compute_pool_buffer_2d<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config6>' into 'nnet::pooling2d_buffer_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config6>' (firmware/nnet_utils/nnet_pooling_stream.h:238).
+INFO: [XFORM 203-603] Inlining function 'nnet::pooling2d_buffer_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config6>' into 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config6>' (firmware/nnet_utils/nnet_pooling_stream.h:251).
+INFO: [XFORM 203-603] Inlining function 'nnet::fill_zero<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' into 'nnet::zeropad2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' (firmware/nnet_utils/nnet_padding_stream.h:75).
+INFO: [XFORM 203-603] Inlining function 'nnet::fill_zero<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' into 'nnet::zeropad2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' (firmware/nnet_utils/nnet_padding_stream.h:69).
+INFO: [XFORM 203-603] Inlining function 'nnet::fill_zero<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' into 'nnet::zeropad2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' (firmware/nnet_utils/nnet_padding_stream.h:63).
+INFO: [XFORM 203-603] Inlining function 'nnet::fill_zero<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' into 'nnet::zeropad2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' (firmware/nnet_utils/nnet_padding_stream.h:57).
+INFO: [XFORM 203-603] Inlining function 'nnet::fill_data<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' into 'nnet::zeropad2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' (firmware/nnet_utils/nnet_padding_stream.h:66).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>::operator[]' into 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config7>' (firmware/nnet_utils/nnet_conv_stream.h:224).
+INFO: [XFORM 203-603] Inlining function 'nnet::kernel_shift_2d<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config7>' into 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config7>' (firmware/nnet_utils/nnet_conv_stream.h:235).
+INFO: [XFORM 203-603] Inlining function 'nnet::product::mult<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<6, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >::product' into 'nnet::dense_resource_rf_leq_nin<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config7_mult>' (firmware/nnet_utils/nnet_dense_resource.h:77).
+INFO: [XFORM 203-603] Inlining function 'nnet::product::mult<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<6, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >::product' into 'nnet::dense_resource_rf_leq_nin<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' (firmware/nnet_utils/nnet_dense_resource.h:77).
+INFO: [XFORM 203-603] Inlining function 'nnet::dense_resource_rf_leq_nin<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config7_mult>' into 'nnet::dense_resource<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config7_mult>' (firmware/nnet_utils/nnet_dense_resource.h:276).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>::operator[]' into 'nnet::compute_output_buffer_2d<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>' (firmware/nnet_utils/nnet_conv_stream.h:285).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>::operator[]' into 'nnet::compute_pool_buffer_2d<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config9>' (firmware/nnet_utils/nnet_pooling_stream.h:195).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>::operator[]' into 'nnet::dense<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 12u>, config11>' (firmware/nnet_utils/nnet_dense_stream.h:48).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>::operator[]' into 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, linear_config8>' (firmware/nnet_utils/nnet_activation_stream.h:47).
+INFO: [XFORM 203-603] Inlining function 'nnet::dense_resource<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config7_mult>' into 'nnet::compute_output_buffer_2d<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>' (firmware/nnet_utils/nnet_conv_stream.h:279).
+INFO: [XFORM 203-603] Inlining function 'nnet::compute_output_buffer_2d<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>' into 'nnet::conv_2d_buffer_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>' (firmware/nnet_utils/nnet_conv2d_stream.h:85).
+INFO: [XFORM 203-603] Inlining function 'nnet::conv_2d_buffer_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>' into 'nnet::conv_2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>' (firmware/nnet_utils/nnet_conv2d_stream.h:103).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>::operator[].1' into 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, linear_config8>' (firmware/nnet_utils/nnet_activation_stream.h:47).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>::operator[]' into 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, config9>' (firmware/nnet_utils/nnet_conv_stream.h:224).
+INFO: [XFORM 203-603] Inlining function 'nnet::kernel_shift_2d<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, config9>' into 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, config9>' (firmware/nnet_utils/nnet_conv_stream.h:235).
+INFO: [XFORM 203-603] Inlining function 'nnet::reduce_pool<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16, config9>' into 'nnet::compute_pool_buffer_2d<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config9>' (firmware/nnet_utils/nnet_pooling_stream.h:195).
+INFO: [XFORM 203-603] Inlining function 'nnet::compute_pool_buffer_2d<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config9>' into 'nnet::pooling2d_buffer_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config9>' (firmware/nnet_utils/nnet_pooling_stream.h:238).
+INFO: [XFORM 203-603] Inlining function 'nnet::pooling2d_buffer_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config9>' into 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config9>' (firmware/nnet_utils/nnet_pooling_stream.h:251).
+INFO: [XFORM 203-603] Inlining function 'nnet::dense_resource_rf_leq_nin<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' into 'nnet::dense_resource<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' (firmware/nnet_utils/nnet_dense_resource.h:276).
+INFO: [XFORM 203-603] Inlining function 'nnet::dense_resource<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' into 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' (firmware/nnet_utils/nnet_dense_stream.h:24).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 12u>::operator[]' into 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 12u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 12u>, linear_config12>' (firmware/nnet_utils/nnet_activation_stream.h:47).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 12u>::operator[]' into 'nnet::dense<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 12u>, config11>' (firmware/nnet_utils/nnet_dense_stream.h:62).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 12u>::operator[]' into 'nnet::dense<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 12u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 2u>, config13>' (firmware/nnet_utils/nnet_dense_stream.h:48).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 12u>::operator[]' into 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 12u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 12u>, linear_config12>' (firmware/nnet_utils/nnet_activation_stream.h:47).
+INFO: [XFORM 203-603] Inlining function 'nnet::product::mult<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<6, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >::product' into 'nnet::dense_resource_rf_leq_nin<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>' (firmware/nnet_utils/nnet_dense_resource.h:77).
+INFO: [XFORM 203-603] Inlining function 'nnet::dense_resource_rf_leq_nin<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>' into 'nnet::dense_resource<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>' (firmware/nnet_utils/nnet_dense_resource.h:276).
+INFO: [XFORM 203-603] Inlining function 'nnet::dense_resource<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>' into 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>' (firmware/nnet_utils/nnet_dense_stream.h:24).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 2u>::operator[]' into 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 2u>, nnet::array<ap_fixed<1024, 1006, (ap_q_mode)4, (ap_o_mode)0, 0>, 2u>, linear_config14>' (firmware/nnet_utils/nnet_activation_stream.h:47).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 2u>::operator[]' into 'nnet::dense<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 12u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 2u>, config13>' (firmware/nnet_utils/nnet_dense_stream.h:62).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<1024, 1006, (ap_q_mode)4, (ap_o_mode)0, 0>, 2u>::operator[]' into 'myproject_axi' (firmware/myproject_axi.cpp:481).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<1024, 1006, (ap_q_mode)4, (ap_o_mode)0, 0>, 2u>::operator[]' into 'myproject_axi' (firmware/myproject_axi.cpp:480).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<1024, 1006, (ap_q_mode)4, (ap_o_mode)0, 0>, 2u>::operator[]' into 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 2u>, nnet::array<ap_fixed<1024, 1006, (ap_q_mode)4, (ap_o_mode)0, 0>, 2u>, linear_config14>' (firmware/nnet_utils/nnet_activation_stream.h:47).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1760.301 ; gain = 1231.883 ; free physical = 139464 ; free virtual = 172263
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'nnet::cast<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_mult>' into 'nnet::conv_2d_cl<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:100->firmware/nnet_utils/nnet_dense_resource.h:276->firmware/nnet_utils/nnet_conv_stream.h:279->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> >::operator()' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 2, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' (firmware/nnet_utils/nnet_common.h:53) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 2, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 4, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >.1' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> >::operator()' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 4, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >.1' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> >::operator()' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' into 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config6>' (firmware/nnet_utils/nnet_pooling_stream.h:22->firmware/nnet_utils/nnet_pooling_stream.h:195->firmware/nnet_utils/nnet_pooling_stream.h:238->firmware/nnet_utils/nnet_pooling_stream.h:251) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::cast<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config7_mult>' into 'nnet::conv_2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>' (firmware/nnet_utils/nnet_dense_resource.h:100->firmware/nnet_utils/nnet_dense_resource.h:276->firmware/nnet_utils/nnet_conv_stream.h:279->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> >::operator()' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 2, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >.1' (firmware/nnet_utils/nnet_common.h:53) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 2, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >.1' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 4, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> >::operator()' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 4, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> >::operator()' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >.1' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >.1' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> >::operator()' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' into 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config9>' (firmware/nnet_utils/nnet_pooling_stream.h:22->firmware/nnet_utils/nnet_pooling_stream.h:195->firmware/nnet_utils/nnet_pooling_stream.h:238->firmware/nnet_utils/nnet_pooling_stream.h:251) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::cast<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' into 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' (firmware/nnet_utils/nnet_dense_resource.h:100->firmware/nnet_utils/nnet_dense_resource.h:276->firmware/nnet_utils/nnet_dense_stream.h:24) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::cast<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>' into 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>' (firmware/nnet_utils/nnet_dense_resource.h:100->firmware/nnet_utils/nnet_dense_resource.h:276->firmware/nnet_utils/nnet_dense_stream.h:24) automatically.
+WARNING: [SYNCHK 200-23] firmware/myproject_axi.cpp:54: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1760.301 ; gain = 1231.883 ; free physical = 139448 ; free virtual = 172250
+WARNING: [XFORM 203-803] Cannot specify interface mode 'axis' on argument 'res.V.data.V' . This interface directive will be discarded. Please apply it on an argument of top module.
+WARNING: [XFORM 203-803] Cannot specify interface mode 'axis' on argument 'data.V.data.V' . This interface directive will be discarded. Please apply it on an argument of top module.
+WARNING: [XFORM 203-803] Cannot specify interface mode 'axis' (firmware/myproject.cpp:31:1) on argument 'input_1.V.data.V' (firmware/myproject.cpp:26). This interface directive will be discarded. Please apply it on an argument of top module.
+WARNING: [XFORM 203-803] Cannot specify interface mode 'axis' (firmware/myproject.cpp:31:94) on argument 'layer14_out.V.data.V' (firmware/myproject.cpp:27). This interface directive will be discarded. Please apply it on an argument of top module.
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'out.data.V' (firmware/myproject_axi.cpp:5).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'in.data.V' (firmware/myproject_axi.cpp:4).
+INFO: [XFORM 203-1101] Packing variable 'res_pack.data.V' (firmware/nnet_utils/nnet_pooling_stream.h:178) into a 216-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'res_pack.data.V' (firmware/nnet_utils/nnet_pooling_stream.h:178) into a 432-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'out_data.data.V' (firmware/nnet_utils/nnet_activation_stream.h:42) into a 216-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'out_data.data.V' (firmware/nnet_utils/nnet_activation_stream.h:42) into a 2048-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'out_data.data.V' (firmware/nnet_utils/nnet_activation_stream.h:42) into a 432-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'out_data.data.V' (firmware/nnet_utils/nnet_activation_stream.h:42) into a 324-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'res_pack.data.V' (firmware/nnet_utils/nnet_dense_stream.h:58) into a 324-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'res_pack.data.V' (firmware/nnet_utils/nnet_dense_stream.h:58) into a 54-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'res_pack.data.V' (firmware/nnet_utils/nnet_conv_stream.h:265) into a 216-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'res_pack.data.V' (firmware/nnet_utils/nnet_conv_stream.h:265) into a 432-bit variable.
+WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (firmware/nnet_utils/nnet_dense_resource.h:65) in function 'nnet::conv_2d_cl<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>'.
+WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (firmware/nnet_utils/nnet_dense_resource.h:65) in function 'nnet::conv_2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>'.
+WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (firmware/nnet_utils/nnet_dense_resource.h:65) in function 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>'.
+WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (firmware/nnet_utils/nnet_dense_resource.h:65) in function 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>'.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'ReadInputWidth' (firmware/nnet_utils/nnet_pooling_stream.h:234) in function 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config6>' for pipelining.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'FiltLoop' (firmware/nnet_utils/nnet_pooling_stream.h:186) because its parent loop or function is pipelined.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'ReadInputWidth' (firmware/nnet_utils/nnet_pooling_stream.h:234) in function 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config9>' for pipelining.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'FiltLoop' (firmware/nnet_utils/nnet_pooling_stream.h:186) because its parent loop or function is pipelined.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LinearActLoop' (firmware/nnet_utils/nnet_activation_stream.h:38) in function 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, linear_config5>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 2u>, nnet::array<ap_fixed<1024, 1006, (ap_q_mode)4, (ap_o_mode)0, 0>, 2u>, linear_config14>' (firmware/nnet_utils/nnet_activation_stream.h:38:51).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LinearActLoop' (firmware/nnet_utils/nnet_activation_stream.h:38) in function 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, linear_config8>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 12u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 12u>, linear_config12>' (firmware/nnet_utils/nnet_activation_stream.h:38:51).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'DataPrepare' (firmware/nnet_utils/nnet_dense_stream.h:41) in function 'nnet::dense<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 12u>, config11>' for pipelining.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'ReuseLoop' (firmware/nnet_utils/nnet_dense_resource.h:64) in function 'nnet::conv_2d_cl<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'ReuseLoop' (firmware/nnet_utils/nnet_dense_resource.h:64) in function 'nnet::conv_2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (firmware/myproject_axi.cpp:30) in function 'myproject_axi' for pipelining.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-1.36' (firmware/myproject_axi.cpp:439) because its parent loop or function is pipelined.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'ReuseLoop' (firmware/nnet_utils/nnet_dense_resource.h:64) in function 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'ReuseLoop' (firmware/nnet_utils/nnet_dense_resource.h:64) in function 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' automatically.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, config9>' (firmware/nnet_utils/nnet_conv_stream.h:188:82).
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'KernelShiftWidth' (firmware/nnet_utils/nnet_conv_stream.h:188) because its parent loop or function is pipelined.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config7>' (firmware/nnet_utils/nnet_conv_stream.h:188:82).
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'KernelShiftWidth' (firmware/nnet_utils/nnet_conv_stream.h:188) because its parent loop or function is pipelined.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, config6>' (firmware/nnet_utils/nnet_conv_stream.h:188:82).
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'KernelShiftWidth' (firmware/nnet_utils/nnet_conv_stream.h:188) because its parent loop or function is pipelined.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'nnet::shift_line_buffer<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, config4>' (firmware/nnet_utils/nnet_conv_stream.h:188:75).
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'KernelShiftWidth' (firmware/nnet_utils/nnet_conv_stream.h:188) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (firmware/nnet_utils/nnet_padding_stream.h:12) in function 'nnet::zeropad2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (firmware/nnet_utils/nnet_padding_stream.h:12) in function 'nnet::zeropad2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.2.1' (firmware/nnet_utils/nnet_padding_stream.h:24) in function 'nnet::zeropad2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.3' (firmware/nnet_utils/nnet_padding_stream.h:12) in function 'nnet::zeropad2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (firmware/nnet_utils/nnet_padding_stream.h:12) in function 'nnet::zeropad2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'FiltLoop' (firmware/nnet_utils/nnet_pooling_stream.h:186) in function 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config6>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'PoolLoop' (firmware/nnet_utils/nnet_pooling_stream.h:190) in function 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config6>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (firmware/nnet_utils/nnet_pooling_stream.h:175) in function 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config9>' completely with a factor of 255.
+INFO: [HLS 200-489] Unrolling loop 'FiltLoop' (firmware/nnet_utils/nnet_pooling_stream.h:186) in function 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config9>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'PoolLoop' (firmware/nnet_utils/nnet_pooling_stream.h:190) in function 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config9>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'LinearPackLoop' (firmware/nnet_utils/nnet_activation_stream.h:45) in function 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, linear_config5>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'LinearPackLoop' (firmware/nnet_utils/nnet_activation_stream.h:45) in function 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 2u>, nnet::array<ap_fixed<1024, 1006, (ap_q_mode)4, (ap_o_mode)0, 0>, 2u>, linear_config14>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'LinearPackLoop' (firmware/nnet_utils/nnet_activation_stream.h:45) in function 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, linear_config8>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'LinearPackLoop' (firmware/nnet_utils/nnet_activation_stream.h:45) in function 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 12u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 12u>, linear_config12>' completely with a factor of 12.
+INFO: [HLS 200-489] Unrolling loop 'DataPack' (firmware/nnet_utils/nnet_dense_stream.h:46) in function 'nnet::dense<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 12u>, config11>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'ResPack' (firmware/nnet_utils/nnet_dense_stream.h:60) in function 'nnet::dense<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 12u>, config11>' completely with a factor of 12.
+INFO: [HLS 200-489] Unrolling loop 'DataPack' (firmware/nnet_utils/nnet_dense_stream.h:46) in function 'nnet::dense<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 12u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 2u>, config13>' completely with a factor of 12.
+INFO: [HLS 200-489] Unrolling loop 'ResPack' (firmware/nnet_utils/nnet_dense_stream.h:60) in function 'nnet::dense<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 12u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 2u>, config13>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'InitAccum' (firmware/nnet_utils/nnet_dense_resource.h:58) in function 'nnet::conv_2d_cl<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'ReuseLoop' (firmware/nnet_utils/nnet_dense_resource.h:64) in function 'nnet::conv_2d_cl<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'MultLoop' (firmware/nnet_utils/nnet_dense_resource.h:73) in function 'nnet::conv_2d_cl<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>' completely with a factor of 72.
+INFO: [HLS 200-489] Unrolling loop 'Result' (firmware/nnet_utils/nnet_dense_resource.h:98) in function 'nnet::conv_2d_cl<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'CastLoop' (firmware/nnet_utils/nnet_conv_stream.h:283) in function 'nnet::conv_2d_cl<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'InitAccum' (firmware/nnet_utils/nnet_dense_resource.h:58) in function 'nnet::conv_2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'ReuseLoop' (firmware/nnet_utils/nnet_dense_resource.h:64) in function 'nnet::conv_2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'MultLoop' (firmware/nnet_utils/nnet_dense_resource.h:73) in function 'nnet::conv_2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>' completely with a factor of 1152.
+INFO: [HLS 200-489] Unrolling loop 'Result' (firmware/nnet_utils/nnet_dense_resource.h:98) in function 'nnet::conv_2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'CastLoop' (firmware/nnet_utils/nnet_conv_stream.h:283) in function 'nnet::conv_2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (firmware/myproject_axi.cpp:36) in function 'myproject_axi' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (firmware/myproject_axi.cpp:52) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.3' (firmware/myproject_axi.cpp:63) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.4' (firmware/myproject_axi.cpp:74) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.5' (firmware/myproject_axi.cpp:85) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.6' (firmware/myproject_axi.cpp:96) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.7' (firmware/myproject_axi.cpp:107) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.8' (firmware/myproject_axi.cpp:118) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.9' (firmware/myproject_axi.cpp:129) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.10' (firmware/myproject_axi.cpp:140) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.11' (firmware/myproject_axi.cpp:151) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.12' (firmware/myproject_axi.cpp:160) in function 'myproject_axi' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.13' (firmware/myproject_axi.cpp:182) in function 'myproject_axi' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.14' (firmware/myproject_axi.cpp:193) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.15' (firmware/myproject_axi.cpp:204) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.16' (firmware/myproject_axi.cpp:215) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.17' (firmware/myproject_axi.cpp:226) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.18' (firmware/myproject_axi.cpp:237) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.19' (firmware/myproject_axi.cpp:248) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.20' (firmware/myproject_axi.cpp:259) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.21' (firmware/myproject_axi.cpp:270) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.22' (firmware/myproject_axi.cpp:281) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.23' (firmware/myproject_axi.cpp:292) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.24' (firmware/myproject_axi.cpp:301) in function 'myproject_axi' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.25' (firmware/myproject_axi.cpp:320) in function 'myproject_axi' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.26' (firmware/myproject_axi.cpp:331) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.27' (firmware/myproject_axi.cpp:342) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.28' (firmware/myproject_axi.cpp:353) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.29' (firmware/myproject_axi.cpp:364) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.30' (firmware/myproject_axi.cpp:375) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.31' (firmware/myproject_axi.cpp:386) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.32' (firmware/myproject_axi.cpp:397) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.33' (firmware/myproject_axi.cpp:408) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.34' (firmware/myproject_axi.cpp:419) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.35' (firmware/myproject_axi.cpp:430) in function 'myproject_axi' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.36' (firmware/myproject_axi.cpp:439) in function 'myproject_axi' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (firmware/myproject_axi.cpp:449) in function 'myproject_axi' completely with a factor of 66.
+INFO: [HLS 200-489] Unrolling loop 'InitAccum' (firmware/nnet_utils/nnet_dense_resource.h:58) in function 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'ReuseLoop' (firmware/nnet_utils/nnet_dense_resource.h:64) in function 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'MultLoop' (firmware/nnet_utils/nnet_dense_resource.h:73) in function 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>' completely with a factor of 24.
+INFO: [HLS 200-489] Unrolling loop 'Result' (firmware/nnet_utils/nnet_dense_resource.h:98) in function 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'InitAccum' (firmware/nnet_utils/nnet_dense_resource.h:58) in function 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' completely with a factor of 12.
+INFO: [HLS 200-489] Unrolling loop 'ReuseLoop' (firmware/nnet_utils/nnet_dense_resource.h:64) in function 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'MultLoop' (firmware/nnet_utils/nnet_dense_resource.h:73) in function 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' completely with a factor of 3072.
+INFO: [HLS 200-489] Unrolling loop 'Result' (firmware/nnet_utils/nnet_dense_resource.h:98) in function 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' completely with a factor of 12.
+INFO: [HLS 200-489] Unrolling loop 'UpdateBuffer' (firmware/nnet_utils/nnet_conv_stream.h:220) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, config9>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'LineBufferDataIn' (firmware/nnet_utils/nnet_conv_stream.h:227) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, config9>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'LineBufferShift' (firmware/nnet_utils/nnet_conv_stream.h:229) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, config9>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'KernelShiftWidth' (firmware/nnet_utils/nnet_conv_stream.h:188) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, config9>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'KernelShiftHeight' (firmware/nnet_utils/nnet_conv_stream.h:190) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, config9>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'KernelShiftChannel' (firmware/nnet_utils/nnet_conv_stream.h:191) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, config9>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'KernelPushHeight' (firmware/nnet_utils/nnet_conv_stream.h:200) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, config9>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'KernelPushChannel' (firmware/nnet_utils/nnet_conv_stream.h:202) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, config9>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'UpdateBuffer' (firmware/nnet_utils/nnet_conv_stream.h:220) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config7>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'LineBufferDataIn' (firmware/nnet_utils/nnet_conv_stream.h:227) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config7>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'LineBufferShift' (firmware/nnet_utils/nnet_conv_stream.h:229) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config7>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'KernelShiftWidth' (firmware/nnet_utils/nnet_conv_stream.h:188) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config7>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'KernelShiftHeight' (firmware/nnet_utils/nnet_conv_stream.h:190) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config7>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'KernelShiftChannel' (firmware/nnet_utils/nnet_conv_stream.h:191) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config7>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'KernelPushHeight' (firmware/nnet_utils/nnet_conv_stream.h:200) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config7>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'KernelPushChannel' (firmware/nnet_utils/nnet_conv_stream.h:202) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config7>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'UpdateBuffer' (firmware/nnet_utils/nnet_conv_stream.h:220) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, config6>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'LineBufferDataIn' (firmware/nnet_utils/nnet_conv_stream.h:227) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, config6>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'KernelShiftWidth' (firmware/nnet_utils/nnet_conv_stream.h:188) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, config6>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'KernelShiftHeight' (firmware/nnet_utils/nnet_conv_stream.h:190) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, config6>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'KernelShiftChannel' (firmware/nnet_utils/nnet_conv_stream.h:191) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, config6>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'KernelPushHeight' (firmware/nnet_utils/nnet_conv_stream.h:200) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, config6>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'KernelPushChannel' (firmware/nnet_utils/nnet_conv_stream.h:202) in function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, config6>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'LineBufferShift' (firmware/nnet_utils/nnet_conv_stream.h:229) in function 'nnet::shift_line_buffer<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, config4>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'KernelShiftWidth' (firmware/nnet_utils/nnet_conv_stream.h:188) in function 'nnet::shift_line_buffer<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, config4>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'KernelShiftHeight' (firmware/nnet_utils/nnet_conv_stream.h:190) in function 'nnet::shift_line_buffer<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, config4>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'KernelPushHeight' (firmware/nnet_utils/nnet_conv_stream.h:200) in function 'nnet::shift_line_buffer<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, config4>' completely with a factor of 3.
+INFO: [XFORM 203-102] Partitioning array 'res_part.data.V.4' (firmware/nnet_utils/nnet_padding_stream.h:23) automatically.
+INFO: [XFORM 203-131] Reshaping array 'w4.V'  in dimension 1 completely.
+INFO: [XFORM 203-131] Reshaping array 'w7.V'  in dimension 1 completely.
+INFO: [XFORM 203-131] Reshaping array 'w13.V'  in dimension 1 completely.
+INFO: [XFORM 203-131] Reshaping array 'w11.V'  in dimension 1 completely.
+INFO: [XFORM 203-102] Automatically partitioning shift register array 'line_buffer.Array.V.3' .
+INFO: [XFORM 203-102] Automatically partitioning shift register array 'line_buffer.Array.V.2' .
+INFO: [XFORM 203-102] Automatically partitioning shift register array 'line_buffer.Array.V.1' .
+INFO: [XFORM 203-102] Automatically partitioning shift register array 'line_buffer.Array.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'layer6_out.V.data.V' (firmware/myproject.cpp:64) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'layer16_out.V.data.V' (firmware/myproject.cpp:68) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'layer5_out.V.data.V' (firmware/myproject.cpp:60) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'layer8_out.V.data.V' (firmware/myproject.cpp:76) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'layer9_out.V.data.V' (firmware/myproject.cpp:80) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'layer4_out.V.data.V' (firmware/myproject.cpp:56) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'layer13_out.V.data.V' (firmware/myproject.cpp:92) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'out_local.V.data.V' (firmware/myproject_axi.cpp:21) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'layer7_out.V.data.V' (firmware/myproject.cpp:72) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'layer11_out.V.data.V' (firmware/myproject.cpp:84) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'layer12_out.V.data.V' (firmware/myproject.cpp:88) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'in_local.V.data.V' (firmware/myproject_axi.cpp:24) .
+INFO: [XFORM 203-101] Partitioning array 'tmp.data.V.3' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buffer.Array.V.3' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pool_window.V' (firmware/nnet_utils/nnet_pooling_stream.h:172) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_data.V.3'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buffer.Array.V.2' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pool_window.V' (firmware/nnet_utils/nnet_pooling_stream.h:172) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_data.V.2'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'tmp.data.V' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'tmp.data.V' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'tmp.data.V' in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'data.V' (firmware/nnet_utils/nnet_dense_stream.h:35) accessed through non-constant indices on dimension 1 (firmware/nnet_utils/nnet_dense_stream.h:48:39), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'data.V' (firmware/nnet_utils/nnet_dense_stream.h:35) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'res'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'tmp.data.V' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'data.V' (firmware/nnet_utils/nnet_dense_stream.h:35) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'res.V' (firmware/nnet_utils/nnet_dense_stream.h:38) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'tmp.data.V' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buffer.Array.V.1' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_data.V.1'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'res_out.i.i'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'b4.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'acc.V' (firmware/nnet_utils/nnet_dense_resource.h:54) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buffer.Array.V' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_data.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'res_out.i.i'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'b7.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'acc.V' (firmware/nnet_utils/nnet_dense_resource.h:54) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'read_buffer.V' (firmware/myproject_axi.cpp:33) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'tmp_buffer.V' (firmware/myproject_axi.cpp:446) accessed through non-constant indices on dimension 1 (firmware/myproject_axi.cpp:466:9), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'tmp_buffer.V' (firmware/myproject_axi.cpp:446) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'b13.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'acc.V' (firmware/nnet_utils/nnet_dense_resource.h:54) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'b11.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'acc.V' (firmware/nnet_utils/nnet_dense_resource.h:54) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'shift_buffer.V' (firmware/nnet_utils/nnet_conv_stream.h:217) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'shift_buffer.V' (firmware/nnet_utils/nnet_conv_stream.h:217) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'shift_buffer.V' (firmware/nnet_utils/nnet_conv_stream.h:217) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'shift_buffer.V' (firmware/nnet_utils/nnet_conv_stream.h:217) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'layer6_out.V.data.V' (firmware/myproject.cpp:64) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'layer16_out.V.data.V' (firmware/myproject.cpp:68) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'layer5_out.V.data.V' (firmware/myproject.cpp:60) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'layer8_out.V.data.V' (firmware/myproject.cpp:76) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'layer9_out.V.data.V' (firmware/myproject.cpp:80) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'layer4_out.V.data.V' (firmware/myproject.cpp:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'layer13_out.V.data.V' (firmware/myproject.cpp:92) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out_local.V.data.V' (firmware/myproject_axi.cpp:21) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'layer7_out.V.data.V' (firmware/myproject.cpp:72) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'layer11_out.V.data.V' (firmware/myproject.cpp:84) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'layer12_out.V.data.V' (firmware/myproject.cpp:88) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'in_local.V.data.V' (firmware/myproject_axi.cpp:24) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buffer.Array.V.3'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buffer.Array.V.2'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buffer.Array.V.1'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buffer.Array.V'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'shift_buffer.V' (firmware/nnet_utils/nnet_conv_stream.h:217) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'shift_buffer.V' (firmware/nnet_utils/nnet_conv_stream.h:217) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'shift_buffer.V' (firmware/nnet_utils/nnet_conv_stream.h:217) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'shift_buffer.V' (firmware/nnet_utils/nnet_conv_stream.h:217) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'nnet::cast<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_mult>' into 'nnet::conv_2d_cl<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>' (firmware/nnet_utils/nnet_dense_resource.h:100->firmware/nnet_utils/nnet_dense_resource.h:276->firmware/nnet_utils/nnet_conv_stream.h:279->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> >::operator()' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 2, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' (firmware/nnet_utils/nnet_common.h:53) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 2, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 4, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >.1' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> >::operator()' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 4, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >.1' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 4, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >.1' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> >::operator()' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::cast<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config7_mult>' into 'nnet::conv_2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>' (firmware/nnet_utils/nnet_dense_resource.h:100->firmware/nnet_utils/nnet_dense_resource.h:276->firmware/nnet_utils/nnet_conv_stream.h:279->firmware/nnet_utils/nnet_conv2d_stream.h:85->firmware/nnet_utils/nnet_conv2d_stream.h:103) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> >::operator()' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 2, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >.1' (firmware/nnet_utils/nnet_common.h:53) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 2, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >.1' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 4, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> >::operator()' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 4, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 4, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >.1' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> >::operator()' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >.1' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >.1' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> >::operator()' into 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' (firmware/nnet_utils/nnet_common.h:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::cast<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' into 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' (firmware/nnet_utils/nnet_dense_resource.h:100->firmware/nnet_utils/nnet_dense_resource.h:276->firmware/nnet_utils/nnet_dense_stream.h:24) automatically.
+INFO: [XFORM 203-602] Inlining function 'nnet::cast<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>' into 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>' (firmware/nnet_utils/nnet_dense_resource.h:100->firmware/nnet_utils/nnet_dense_resource.h:276->firmware/nnet_utils/nnet_dense_stream.h:24) automatically.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (firmware/myproject_axi.cpp:30) to a process function for dataflow in function 'myproject_axi'.
+INFO: [XFORM 203-721] Changing loop 'Loop_2_proc' (firmware/myproject_axi.cpp:445) to a process function for dataflow in function 'myproject_axi'.
+INFO: [XFORM 203-712] Applying dataflow to function 'myproject', detected/extracted 11 process function(s): 
+	 'nnet::conv_2d_cl<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>'
+	 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, linear_config5>'
+	 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config6>'
+	 'nnet::zeropad2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>'
+	 'nnet::conv_2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>'
+	 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, linear_config8>'
+	 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config9>'
+	 'nnet::dense<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 12u>, config11>'
+	 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 12u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 12u>, linear_config12>'
+	 'nnet::dense<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 12u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 2u>, config13>'
+	 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 2u>, nnet::array<ap_fixed<1024, 1006, (ap_q_mode)4, (ap_o_mode)0, 0>, 2u>, linear_config14>'.
+INFO: [XFORM 203-712] Applying dataflow to function 'myproject_axi', detected/extracted 4 process function(s): 
+	 'Loop_1_proc408'
+	 'Loop_2_proc409'
+	 'myproject'
+	 'Block__proc'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (firmware/myproject_axi.cpp:30:38) to (firmware/myproject_axi.cpp:30:32) in function 'Loop_1_proc408'... converting 449 basic blocks.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.66i16P.i7' into 'Loop_2_proc409' (firmware/myproject_axi.cpp:466).
+INFO: [XFORM 203-11] Balancing expressions in function 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config6>' (firmware/nnet_utils/nnet_pooling_stream.h:22:5)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config9>' (firmware/nnet_utils/nnet_pooling_stream.h:22:5)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' (firmware/nnet_utils/nnet_dense_resource.h:65:15)...417 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>' (firmware/nnet_utils/nnet_dense_stream.h:26:1)...14 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'nnet::conv_2d_cl<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>' (firmware/nnet_utils/nnet_conv_stream.h:65:5)...12 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'nnet::conv_2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>' (firmware/nnet_utils/nnet_conv_stream.h:65:5)...137 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'Loop_1_proc408' (firmware/myproject_axi.cpp:11:41)...259 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:12:04 ; elapsed = 00:12:06 . Memory (MB): peak = 1760.301 ; gain = 1231.883 ; free physical = 139313 ; free virtual = 172119
+INFO: [XFORM 203-541] Flattening a loop nest 'ReadInputHeight' (firmware/nnet_utils/nnet_pooling_stream.h:233:80) in function 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config6>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'ReadInputHeight' (firmware/nnet_utils/nnet_pooling_stream.h:233:80) in function 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config9>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'ReadInputHeight' (firmware/nnet_utils/nnet_conv2d_stream.h:78:80) in function 'nnet::conv_2d_cl<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'ReadInputHeight' (firmware/nnet_utils/nnet_conv2d_stream.h:78:80) in function 'nnet::conv_2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (firmware/myproject_axi.cpp:455:28) in function 'Loop_2_proc409'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (firmware/myproject_axi.cpp:445:24) in function 'Loop_2_proc409' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-631] Renaming function 'nnet::zeropad2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config16>' to 'zeropad2d_cl<array,array<ap_fixed,8u>,config16>' (firmware/nnet_utils/nnet_padding_stream.h:16:59)
+WARNING: [XFORM 203-631] Renaming function 'nnet::shift_line_buffer<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, config4>' to 'shift_line_buffer<array<ap_ufixed,1u>,config4>' (firmware/nnet_utils/nnet_conv_stream.h:214:1)
+WARNING: [XFORM 203-631] Renaming function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config7>' to 'shift_line_buffer<array<ap_fixed,8u>,config7>' (firmware/nnet_utils/nnet_conv_stream.h:193:1)
+WARNING: [XFORM 203-631] Renaming function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, config6>' to 'shift_line_buffer<array<ap_fixed,8u>,config6>' (firmware/nnet_utils/nnet_conv_stream.h:214:1)
+WARNING: [XFORM 203-631] Renaming function 'nnet::shift_line_buffer<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, config9>' to 'shift_line_buffer<array<ap_fixed,16u>,config9>' (firmware/nnet_utils/nnet_conv_stream.h:214:1)
+WARNING: [XFORM 203-631] Renaming function 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' to 'reduce<ap_fixed,8,Op_max<ap_fixed<27,9,4,0,0>>>' (firmware/nnet_utils/nnet_common.h:55:43)
+WARNING: [XFORM 203-631] Renaming function 'nnet::reduce<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16, nnet::Op_max<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0> > >' to 'reduce<ap_fixed,16,Op_max<ap_fixed<27,9,4,0,0>>>' (firmware/nnet_utils/nnet_common.h:55:43)
+WARNING: [XFORM 203-631] Renaming function 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config6>' to 'pooling2d_cl<array,array<ap_fixed,8u>,config6>' (firmware/nnet_utils/nnet_pooling_stream.h:22:5)
+WARNING: [XFORM 203-631] Renaming function 'nnet::pooling2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config9>' to 'pooling2d_cl<array,array<ap_fixed,16u>,config9>' (firmware/nnet_utils/nnet_pooling_stream.h:22:5)
+WARNING: [XFORM 203-631] Renaming function 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 8u>, linear_config5>' to 'linear<array,array<ap_fixed,8u>,linear_config5>' (firmware/nnet_utils/nnet_activation_stream.h:38:70)
+WARNING: [XFORM 203-631] Renaming function 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 2u>, nnet::array<ap_fixed<1024, 1006, (ap_q_mode)4, (ap_o_mode)0, 0>, 2u>, linear_config14>' to 'linear<array,array<ap_fixed,2u>,linear_config14>' (firmware/nnet_utils/nnet_activation_stream.h:38:1)
+WARNING: [XFORM 203-631] Renaming function 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 16u>, linear_config8>' to 'linear<array,array<ap_fixed,16u>,linear_config8>' (firmware/nnet_utils/nnet_activation_stream.h:38:70)
+WARNING: [XFORM 203-631] Renaming function 'nnet::linear<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 12u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 12u>, linear_config12>' to 'linear<array,array<ap_fixed,12u>,linear_config12>' (firmware/nnet_utils/nnet_activation_stream.h:38:1)
+WARNING: [XFORM 203-631] Renaming function 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' to 'dense_wrapper<ap_fixed,ap_fixed<27,9,5,3,0>,config11>' (firmware/nnet_utils/nnet_dense_resource.h:65:15)
+WARNING: [XFORM 203-631] Renaming function 'nnet::dense_wrapper<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config13>' to 'dense_wrapper<ap_fixed,ap_fixed<27,9,5,3,0>,config13>' (firmware/nnet_utils/nnet_dense_stream.h:26:1)
+WARNING: [XFORM 203-631] Renaming function 'nnet::dense<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 12u>, config11>' to 'dense<array,array<ap_fixed<27,9,5,3,0>,12u>,config11>' (firmware/nnet_utils/nnet_dense_stream.h:41:39)
+WARNING: [XFORM 203-631] Renaming function 'nnet::dense<nnet::array<ap_fixed<27, 9, (ap_q_mode)4, (ap_o_mode)0, 0>, 12u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 2u>, config13>' to 'dense<array,array<ap_fixed<27,9,5,3,0>,2u>,config13>' (firmware/nnet_utils/nnet_dense_stream.h:41:1)
+WARNING: [XFORM 203-631] Renaming function 'nnet::conv_2d_cl<nnet::array<ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, 1u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, config4>' to 'conv_2d_cl<array,array<ap_fixed,8u>,config4>' (firmware/nnet_utils/nnet_conv_stream.h:65:5)
+WARNING: [XFORM 203-631] Renaming function 'nnet::conv_2d_cl<nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 8u>, nnet::array<ap_fixed<27, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 16u>, config7>' to 'conv_2d_cl<array,array<ap_fixed,16u>,config7>' (firmware/nnet_utils/nnet_conv_stream.h:65:5)
+WARNING: [XFORM 203-532] Ignored the rewind option for Function 'dense_wrapper<ap_fixed,ap_fixed<27,9,5,3,0>,config13>' (firmware/nnet_utils/nnet_dense_stream.h:14:1) as the option is not applicable to function pipelining.
+WARNING: [XFORM 203-532] Ignored the rewind option for Function 'dense_wrapper<ap_fixed,ap_fixed<27,9,5,3,0>,config11>' (firmware/nnet_utils/nnet_mult.h:14:9) as the option is not applicable to function pipelining.
+INFO: [XFORM 203-531] Rewinding loop 'ReadInputHeight_ReadInputWidth' in function 'conv_2d_cl<array,array<ap_fixed,8u>,config4>'.
+INFO: [XFORM 203-531] Rewinding loop 'ReadInputHeight_ReadInputWidth' in function 'conv_2d_cl<array,array<ap_fixed,16u>,config7>'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:12:26 ; elapsed = 00:12:28 . Memory (MB): peak = 1760.301 ; gain = 1231.883 ; free physical = 139055 ; free virtual = 171865
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'myproject_axi' ...
+WARNING: [SYN 201-103] Legalizing function name 'shift_line_buffer<array<ap_ufixed,1u>,config4>' to 'shift_line_buffer_array_ap_ufixed_1u_config4_s'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_2d_cl<array,array<ap_fixed,8u>,config4>' to 'conv_2d_cl_array_array_ap_fixed_8u_config4_s'.
+WARNING: [SYN 201-103] Legalizing function name 'linear<array,array<ap_fixed,8u>,linear_config5>' to 'linear_array_array_ap_fixed_8u_linear_config5_s'.
+WARNING: [SYN 201-103] Legalizing function name 'shift_line_buffer<array<ap_fixed,8u>,config6>' to 'shift_line_buffer_array_ap_fixed_8u_config6_s'.
+WARNING: [SYN 201-103] Legalizing function name 'reduce<ap_fixed,8,Op_max<ap_fixed<27,9,4,0,0>>>' to 'reduce_ap_fixed_8_Op_max_ap_fixed_27_9_4_0_0_s'.
+WARNING: [SYN 201-103] Legalizing function name 'pooling2d_cl<array,array<ap_fixed,8u>,config6>' to 'pooling2d_cl_array_array_ap_fixed_8u_config6_s'.
+WARNING: [SYN 201-103] Legalizing function name 'zeropad2d_cl<array,array<ap_fixed,8u>,config16>' to 'zeropad2d_cl_array_array_ap_fixed_8u_config16_s'.
+WARNING: [SYN 201-103] Legalizing function name 'shift_line_buffer<array<ap_fixed,8u>,config7>' to 'shift_line_buffer_array_ap_fixed_8u_config7_s'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_2d_cl<array,array<ap_fixed,16u>,config7>' to 'conv_2d_cl_array_array_ap_fixed_16u_config7_s'.
+WARNING: [SYN 201-103] Legalizing function name 'linear<array,array<ap_fixed,16u>,linear_config8>' to 'linear_array_array_ap_fixed_16u_linear_config8_s'.
+WARNING: [SYN 201-103] Legalizing function name 'shift_line_buffer<array<ap_fixed,16u>,config9>' to 'shift_line_buffer_array_ap_fixed_16u_config9_s'.
+WARNING: [SYN 201-103] Legalizing function name 'reduce<ap_fixed,16,Op_max<ap_fixed<27,9,4,0,0>>>' to 'reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s'.
+WARNING: [SYN 201-103] Legalizing function name 'pooling2d_cl<array,array<ap_fixed,16u>,config9>' to 'pooling2d_cl_array_array_ap_fixed_16u_config9_s'.
+WARNING: [SYN 201-103] Legalizing function name 'dense_wrapper<ap_fixed,ap_fixed<27,9,5,3,0>,config11>' to 'dense_wrapper_ap_fixed_ap_fixed_27_9_5_3_0_config11_s'.
+WARNING: [SYN 201-103] Legalizing function name 'dense<array,array<ap_fixed<27,9,5,3,0>,12u>,config11>' to 'dense_array_array_ap_fixed_27_9_5_3_0_12u_config11_s'.
+WARNING: [SYN 201-103] Legalizing function name 'linear<array,array<ap_fixed,12u>,linear_config12>' to 'linear_array_array_ap_fixed_12u_linear_config12_s'.
+WARNING: [SYN 201-103] Legalizing function name 'dense_wrapper<ap_fixed,ap_fixed<27,9,5,3,0>,config13>' to 'dense_wrapper_ap_fixed_ap_fixed_27_9_5_3_0_config13_s'.
+WARNING: [SYN 201-103] Legalizing function name 'dense<array,array<ap_fixed<27,9,5,3,0>,2u>,config13>' to 'dense_array_array_ap_fixed_27_9_5_3_0_2u_config13_s'.
+WARNING: [SYN 201-103] Legalizing function name 'linear<array,array<ap_fixed,2u>,linear_config14>' to 'linear_array_array_ap_fixed_2u_linear_config14_s'.
+WARNING: [SYN 201-103] Legalizing function name 'Block__proc' to 'Block_proc'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_1_proc408' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_1_proc408' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between axis read on port 'in_last_V' (firmware/myproject_axi.cpp:315->firmware/myproject_axi.cpp:11) and axis read on port 'in_last_V' (firmware/myproject_axi.cpp:315->firmware/myproject_axi.cpp:11).
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_1_proc408' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between axis read on port 'in_last_V' (firmware/myproject_axi.cpp:315->firmware/myproject_axi.cpp:11) and axis read on port 'in_last_V' (firmware/myproject_axi.cpp:315->firmware/myproject_axi.cpp:11).
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_1_proc408' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between fifo write on port 'tmp_stream_V_V' (firmware/myproject_axi.cpp:441->firmware/myproject_axi.cpp:11) and fifo write on port 'tmp_stream_V_V' (firmware/myproject_axi.cpp:441->firmware/myproject_axi.cpp:11).
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_1_proc408' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between fifo write on port 'tmp_stream_V_V' (firmware/myproject_axi.cpp:441->firmware/myproject_axi.cpp:11) and fifo write on port 'tmp_stream_V_V' (firmware/myproject_axi.cpp:441->firmware/myproject_axi.cpp:11).
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_1_proc408' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 19, distance = 1, offset = 1)
+   between fifo write on port 'tmp_stream_V_V' (firmware/myproject_axi.cpp:441->firmware/myproject_axi.cpp:11) and fifo write on port 'tmp_stream_V_V' (firmware/myproject_axi.cpp:441->firmware/myproject_axi.cpp:11).
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_1_proc408' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 27, distance = 1, offset = 1)
+   between fifo write on port 'tmp_stream_V_V' (firmware/myproject_axi.cpp:441->firmware/myproject_axi.cpp:11) and fifo write on port 'tmp_stream_V_V' (firmware/myproject_axi.cpp:441->firmware/myproject_axi.cpp:11).
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_1_proc408' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 31, distance = 1, offset = 1)
+   between fifo write on port 'tmp_stream_V_V' (firmware/myproject_axi.cpp:441->firmware/myproject_axi.cpp:11) and fifo write on port 'tmp_stream_V_V' (firmware/myproject_axi.cpp:441->firmware/myproject_axi.cpp:11).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 32, Depth = 35.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 750.62 seconds; current allocated memory: 605.797 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 4.92 seconds; current allocated memory: 614.247 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_2_proc409' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 12.44 seconds; current allocated memory: 617.233 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.09 seconds; current allocated memory: 632.481 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'shift_line_buffer_array_ap_ufixed_1u_config4_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'shift_line_buffer<array<ap_ufixed,1u>,config4>'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.73 seconds; current allocated memory: 632.612 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 632.718 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_2d_cl_array_array_ap_fixed_8u_config4_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 633.877 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 634.855 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'linear_array_array_ap_fixed_8u_linear_config5_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LinearActLoop'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.55 seconds; current allocated memory: 635.041 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 635.269 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'shift_line_buffer_array_ap_fixed_8u_config6_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'shift_line_buffer<array<ap_fixed,8u>,config6>'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 635.693 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 636.185 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'reduce_ap_fixed_8_Op_max_ap_fixed_27_9_4_0_0_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'reduce<ap_fixed,8,Op_max<ap_fixed<27,9,4,0,0>>>'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 636.272 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 636.376 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pooling2d_cl_array_array_ap_fixed_8u_config6_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ReadInputHeight_ReadInputWidth'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 637.328 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 638.311 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'zeropad2d_cl_array_array_ap_fixed_8u_config16_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.69 seconds; current allocated memory: 638.662 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 639.012 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'shift_line_buffer_array_ap_fixed_8u_config7_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'shift_line_buffer<array<ap_fixed,8u>,config7>'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 639.453 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 639.990 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_2d_cl_array_array_ap_fixed_16u_config7_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.78 seconds; current allocated memory: 643.888 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.39 seconds; current allocated memory: 647.293 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'linear_array_array_ap_fixed_16u_linear_config8_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LinearActLoop'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.63 seconds; current allocated memory: 647.636 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 648.017 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'shift_line_buffer_array_ap_fixed_16u_config9_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'shift_line_buffer<array<ap_fixed,16u>,config9>'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 649.620 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.63 seconds; current allocated memory: 651.517 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'reduce<ap_fixed,16,Op_max<ap_fixed<27,9,4,0,0>>>'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 651.700 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 651.923 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pooling2d_cl_array_array_ap_fixed_16u_config9_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ReadInputHeight_ReadInputWidth'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.49 seconds; current allocated memory: 654.714 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.36 seconds; current allocated memory: 658.135 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dense_wrapper_ap_fixed_ap_fixed_27_9_5_3_0_config11_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.88 seconds; current allocated memory: 664.273 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.66 seconds; current allocated memory: 669.270 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dense_array_array_ap_fixed_27_9_5_3_0_12u_config11_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'DataPrepare'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.22 seconds; current allocated memory: 670.708 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.77 seconds; current allocated memory: 671.998 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'linear_array_array_ap_fixed_12u_linear_config12_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'linear<array,array<ap_fixed,12u>,linear_config12>'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.64 seconds; current allocated memory: 672.489 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 672.761 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dense_wrapper_ap_fixed_ap_fixed_27_9_5_3_0_config13_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 673.005 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 673.252 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dense_array_array_ap_fixed_27_9_5_3_0_2u_config13_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 673.377 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 673.574 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'linear_array_array_ap_fixed_2u_linear_config14_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'linear<array,array<ap_fixed,2u>,linear_config14>'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 673.632 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 673.723 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'myproject' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 674.490 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 6.31 seconds; current allocated memory: 679.691 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.64 seconds; current allocated memory: 681.115 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 681.247 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'myproject_axi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 681.408 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 8.34 seconds; current allocated memory: 686.415 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_1_proc408' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_1_proc408'.
+INFO: [HLS 200-111]  Elapsed time: 6.29 seconds; current allocated memory: 702.837 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_2_proc409' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mux_646_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_2_proc409'.
+INFO: [HLS 200-111]  Elapsed time: 11.46 seconds; current allocated memory: 750.077 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'shift_line_buffer_array_ap_ufixed_1u_config4_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_ufixed_1u_config4_s_line_buffer_Array_V_1_0_0' to 'shift_line_buffer_array_ap_ufixed_1u_config4_s_line_buffebkb' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_ufixed_1u_config4_s_line_buffer_Array_V_1_1_0' to 'shift_line_buffer_array_ap_ufixed_1u_config4_s_line_buffecud' due to the length limit 60
+INFO: [RTGEN 206-100] Finished creating RTL model for 'shift_line_buffer_array_ap_ufixed_1u_config4_s'.
+INFO: [HLS 200-111]  Elapsed time: 1.86 seconds; current allocated memory: 765.405 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_2d_cl_array_array_ap_fixed_8u_config4_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'pX_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'sX_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'pY_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'sY_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_1_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_1_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_1_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_1_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_1_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_1_8' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mac_muladd_16ns_7ns_17ns_22_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mac_muladd_16ns_7ns_18s_23_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mac_muladd_16ns_7ns_23s_24_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mul_mul_16ns_6s_22_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_2d_cl_array_array_ap_fixed_8u_config4_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.73 seconds; current allocated memory: 767.479 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'linear_array_array_ap_fixed_8u_linear_config5_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_array_array_ap_fixed_8u_linear_config5_s'.
+INFO: [HLS 200-111]  Elapsed time: 1.45 seconds; current allocated memory: 772.540 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'shift_line_buffer_array_ap_fixed_8u_config6_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config6_s_line_buffer_Array_V_3_0_0' to 'shift_line_buffer_array_ap_fixed_8u_config6_s_line_bufferdEe' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config6_s_line_buffer_Array_V_3_0_1' to 'shift_line_buffer_array_ap_fixed_8u_config6_s_line_buffereOg' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config6_s_line_buffer_Array_V_3_0_2' to 'shift_line_buffer_array_ap_fixed_8u_config6_s_line_bufferfYi' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config6_s_line_buffer_Array_V_3_0_3' to 'shift_line_buffer_array_ap_fixed_8u_config6_s_line_bufferg8j' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config6_s_line_buffer_Array_V_3_0_4' to 'shift_line_buffer_array_ap_fixed_8u_config6_s_line_bufferhbi' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config6_s_line_buffer_Array_V_3_0_5' to 'shift_line_buffer_array_ap_fixed_8u_config6_s_line_bufferibs' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config6_s_line_buffer_Array_V_3_0_6' to 'shift_line_buffer_array_ap_fixed_8u_config6_s_line_bufferjbC' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config6_s_line_buffer_Array_V_3_0_7' to 'shift_line_buffer_array_ap_fixed_8u_config6_s_line_bufferkbM' due to the length limit 60
+INFO: [RTGEN 206-100] Finished creating RTL model for 'shift_line_buffer_array_ap_fixed_8u_config6_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.99 seconds; current allocated memory: 783.220 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'reduce_ap_fixed_8_Op_max_ap_fixed_27_9_4_0_0_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'reduce_ap_fixed_8_Op_max_ap_fixed_27_9_4_0_0_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.82 seconds; current allocated memory: 785.125 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pooling2d_cl_array_array_ap_fixed_8u_config6_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'pX' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'sX' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'pY' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'sY' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_15' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_16' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_17' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_18' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_19' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_20' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_21' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_22' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_23' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_24' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_25' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_26' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_27' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_28' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_29' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_30' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_31' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_40' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_41' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_42' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_43' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_44' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_45' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_46' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_47' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_48' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_49' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_50' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_51' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_52' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_53' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_54' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_55' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_56' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_57' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_58' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_59' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_60' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_61' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_62' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_3_63' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pooling2d_cl_array_array_ap_fixed_8u_config6_s'.
+INFO: [HLS 200-111]  Elapsed time: 1.34 seconds; current allocated memory: 792.530 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'zeropad2d_cl_array_array_ap_fixed_8u_config16_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'zeropad2d_cl_array_array_ap_fixed_8u_config16_s'.
+INFO: [HLS 200-111]  Elapsed time: 1.37 seconds; current allocated memory: 796.863 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'shift_line_buffer_array_ap_fixed_8u_config7_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_32' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_36' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_59' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_61' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_44' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_65' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_69' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffer_Array_V_0_0' to 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_bufferlbW' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffer_Array_V_1321_0' to 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffermb6' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffer_Array_V_0_1' to 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_bufferncg' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffer_Array_V_1321_1' to 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_bufferocq' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffer_Array_V_0_2' to 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_bufferpcA' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffer_Array_V_1321_2' to 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_bufferqcK' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffer_Array_V_0_3' to 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_bufferrcU' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffer_Array_V_1321_3' to 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffersc4' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffer_Array_V_0_4' to 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffertde' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffer_Array_V_1321_4' to 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_bufferudo' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffer_Array_V_0_5' to 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffervdy' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffer_Array_V_1321_5' to 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_bufferwdI' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffer_Array_V_0_6' to 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_bufferxdS' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffer_Array_V_1321_6' to 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_bufferyd2' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffer_Array_V_0_7' to 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_bufferzec' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_buffer_Array_V_1321_7' to 'shift_line_buffer_array_ap_fixed_8u_config7_s_line_bufferAem' due to the length limit 60
+INFO: [RTGEN 206-100] Finished creating RTL model for 'shift_line_buffer_array_ap_fixed_8u_config7_s'.
+INFO: [HLS 200-111]  Elapsed time: 1.26 seconds; current allocated memory: 807.720 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_2d_cl_array_array_ap_fixed_16u_config7_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'pX_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'sX_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'pY_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'sY_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_15' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_16' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_18' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_19' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_20' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_21' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_22' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_23' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_34' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_35' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_37' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_38' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_39' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_40' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_41' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_42' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_43' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_45' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_46' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_47' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_56' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_57' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_58' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_60' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_62' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_63' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_64' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_66' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_67' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_68' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_70' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_71' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mul_mul_27s_6ns_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mul_mul_27s_6s_32_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_2d_cl_array_array_ap_fixed_16u_config7_s'.
+INFO: [HLS 200-111]  Elapsed time: 1.65 seconds; current allocated memory: 820.209 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'linear_array_array_ap_fixed_16u_linear_config8_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_array_array_ap_fixed_16u_linear_config8_s'.
+INFO: [HLS 200-111]  Elapsed time: 3.73 seconds; current allocated memory: 836.996 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'shift_line_buffer_array_ap_fixed_16u_config9_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_0_0' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeBew' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_1_0' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeCeG' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_2_0' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeDeQ' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_0_1' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeEe0' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_1_1' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeFfa' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_2_1' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeGfk' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_0_2' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeHfu' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_1_2' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeIfE' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_2_2' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeJfO' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_0_3' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeKfY' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_1_3' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeLf8' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_2_3' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeMgi' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_0_4' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeNgs' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_1_4' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeOgC' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_2_4' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffePgM' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_0_5' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeQgW' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_1_5' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeRg6' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_2_5' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeShg' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_0_6' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeThq' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_1_6' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeUhA' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_2_6' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeVhK' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_0_7' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeWhU' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_1_7' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeXh4' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_2_7' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeYie' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_0_8' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffeZio' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_1_8' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffe0iy' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_2_8' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffe1iI' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_0_9' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffe2iS' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_1_9' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffe3i2' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_2_9' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffe4jc' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_0_10' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffe5jm' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_1_10' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffe6jw' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_2_10' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffe7jG' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_0_11' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffe8jQ' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_1_11' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffe9j0' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_2_11' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffebak' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_0_12' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffebbk' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_1_12' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffebck' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_2_12' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffebdk' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_0_13' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffebek' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_1_13' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffebfk' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_2_13' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffebgk' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_0_14' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffebhl' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_1_14' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffebil' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_2_14' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffebjl' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_0_15' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffebkl' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_1_15' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffebll' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffer_Array_V_2_2_15' to 'shift_line_buffer_array_ap_fixed_16u_config9_s_line_buffebml' due to the length limit 60
+INFO: [RTGEN 206-104] Estimated max fanout for 'shift_line_buffer_array_ap_fixed_16u_config9_s' is 7009 from HDL expression: ((1'b1 == ap_ce) & (ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'shift_line_buffer_array_ap_fixed_16u_config9_s'.
+INFO: [HLS 200-111]  Elapsed time: 6.2 seconds; current allocated memory: 987.161 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'reduce_ap_fixed_16_Op_max_ap_fixed_27_9_4_0_0_s'.
+INFO: [HLS 200-111]  Elapsed time: 1.9 seconds; current allocated memory: 991.316 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pooling2d_cl_array_array_ap_fixed_16u_config9_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'pX_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'sX_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'pY_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'sY_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_16' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_17' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_18' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_19' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_20' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_21' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_22' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_23' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_24' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_25' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_26' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_27' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_28' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_29' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_30' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_31' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_32' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_33' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_34' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_35' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_36' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_37' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_38' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_39' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_40' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_41' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_42' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_43' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_44' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_45' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_46' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_47' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_48' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_49' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_50' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_51' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_52' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_53' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_54' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_55' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_56' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_57' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_58' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_59' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_60' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_61' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_62' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_63' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_80' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_81' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_82' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_83' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_84' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_85' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_86' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_87' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_88' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_89' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_90' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_91' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_92' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_93' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_94' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_95' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_96' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_97' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_98' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_99' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_100' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_101' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_102' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_103' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_104' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_105' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_106' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_107' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_108' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_109' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_110' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_111' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_112' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_113' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_114' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_115' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_116' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_117' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_118' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_119' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_120' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_121' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_122' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_123' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_124' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_125' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_126' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_127' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_144' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_145' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_146' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_147' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_148' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_149' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_150' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_151' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_152' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_153' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_154' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_155' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_156' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_157' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_158' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_159' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_160' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_161' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_162' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_163' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_164' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_165' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_166' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_167' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_168' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_169' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_170' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_171' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_172' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_173' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_174' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_175' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_176' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_177' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_178' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_179' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_180' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_181' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_182' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_183' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_184' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_185' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_186' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_187' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_188' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_189' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_190' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_191' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_208' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_209' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_210' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_211' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_212' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_213' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_214' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_215' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_216' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_217' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_218' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_219' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_220' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_221' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_222' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_223' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_224' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_225' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_226' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_227' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_228' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_229' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_230' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_231' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_232' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_233' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_234' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_235' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_236' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_237' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_238' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_239' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_240' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_241' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_242' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_243' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_244' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_245' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_246' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_247' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_248' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_249' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_250' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_251' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_252' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_253' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_254' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'kernel_data_V_2_255' is power-on initialization.
+INFO: [RTGEN 206-104] Estimated max fanout for 'pooling2d_cl_array_array_ap_fixed_16u_config9_s' is 6912 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln233_reg_4738 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pooling2d_cl_array_array_ap_fixed_16u_config9_s'.
+INFO: [HLS 200-111]  Elapsed time: 7.56 seconds; current allocated memory: 1.053 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dense_wrapper_ap_fixed_ap_fixed_27_9_5_3_0_config11_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'dense_wrapper_ap_fixed_ap_fixed_27_9_5_3_0_config11_s' is 6480 from HDL expression: (1'b1 == ap_CS_fsm_state1)
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_wrapper_ap_fixed_ap_fixed_27_9_5_3_0_config11_s'.
+INFO: [HLS 200-111]  Elapsed time: 3.64 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dense_array_array_ap_fixed_27_9_5_3_0_12u_config11_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_array_array_ap_fixed_27_9_5_3_0_12u_config11_s'.
+INFO: [HLS 200-111]  Elapsed time: 7.27 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'linear_array_array_ap_fixed_12u_linear_config12_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_array_array_ap_fixed_12u_linear_config12_s'.
+INFO: [HLS 200-111]  Elapsed time: 3.16 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dense_wrapper_ap_fixed_ap_fixed_27_9_5_3_0_config13_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_wrapper_ap_fixed_ap_fixed_27_9_5_3_0_config13_s'.
+INFO: [HLS 200-111]  Elapsed time: 1.62 seconds; current allocated memory: 1.105 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dense_array_array_ap_fixed_27_9_5_3_0_2u_config13_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_array_array_ap_fixed_27_9_5_3_0_2u_config13_s'.
+INFO: [HLS 200-111]  Elapsed time: 1.73 seconds; current allocated memory: 1.106 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'linear_array_array_ap_fixed_2u_linear_config14_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_array_array_ap_fixed_2u_linear_config14_s'.
+INFO: [HLS 200-111]  Elapsed time: 1.62 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'myproject' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'start_for_dense_array_array_ap_fixed_27_9_5_3_0_12u_config11_U0' to 'start_for_dense_array_array_ap_fixed_27_9_5_3_0_12u_confibnm' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'start_for_linear_array_array_ap_fixed_12u_linear_config12_U0' to 'start_for_linear_array_array_ap_fixed_12u_linear_config12bom' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'start_for_dense_array_array_ap_fixed_27_9_5_3_0_2u_config13_U0' to 'start_for_dense_array_array_ap_fixed_27_9_5_3_0_2u_configbpm' due to the length limit 60
+INFO: [RTGEN 206-100] Finished creating RTL model for 'myproject'.
+INFO: [HLS 200-111]  Elapsed time: 1.81 seconds; current allocated memory: 1.112 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_proc'.
+INFO: [HLS 200-111]  Elapsed time: 5.93 seconds; current allocated memory: 1.117 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'myproject_axi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject_axi/in_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject_axi/in_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject_axi/out_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject_axi/out_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'myproject_axi' to 'ap_ctrl_none'.
+INFO: [HLS 200-633] Setting ap_ctrl_none interface for myproject_axi
+INFO: [RTGEN 206-100] Finished creating RTL model for 'myproject_axi'.
+INFO: [HLS 200-111]  Elapsed time: 1.58 seconds; current allocated memory: 1.118 GB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 228.86 MHz
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_V_data_0_V_U(fifo_w27_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_V_data_1_V_U(fifo_w27_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_V_data_2_V_U(fifo_w27_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_V_data_3_V_U(fifo_w27_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_V_data_4_V_U(fifo_w27_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_V_data_5_V_U(fifo_w27_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_V_data_6_V_U(fifo_w27_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_V_data_7_V_U(fifo_w27_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer5_out_V_data_0_V_U(fifo_w27_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer5_out_V_data_1_V_U(fifo_w27_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer5_out_V_data_2_V_U(fifo_w27_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer5_out_V_data_3_V_U(fifo_w27_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer5_out_V_data_4_V_U(fifo_w27_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer5_out_V_data_5_V_U(fifo_w27_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer5_out_V_data_6_V_U(fifo_w27_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer5_out_V_data_7_V_U(fifo_w27_d2048_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer6_out_V_data_0_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer6_out_V_data_1_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer6_out_V_data_2_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer6_out_V_data_3_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer6_out_V_data_4_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer6_out_V_data_5_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer6_out_V_data_6_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer6_out_V_data_7_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer16_out_V_data_0_V_U(fifo_w27_d324_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer16_out_V_data_1_V_U(fifo_w27_d324_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer16_out_V_data_2_V_U(fifo_w27_d324_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer16_out_V_data_3_V_U(fifo_w27_d324_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer16_out_V_data_4_V_U(fifo_w27_d324_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer16_out_V_data_5_V_U(fifo_w27_d324_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer16_out_V_data_6_V_U(fifo_w27_d324_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer16_out_V_data_7_V_U(fifo_w27_d324_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer7_out_V_data_0_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer7_out_V_data_1_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer7_out_V_data_2_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer7_out_V_data_3_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer7_out_V_data_4_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer7_out_V_data_5_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer7_out_V_data_6_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer7_out_V_data_7_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer7_out_V_data_8_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer7_out_V_data_9_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer7_out_V_data_10_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer7_out_V_data_11_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer7_out_V_data_12_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer7_out_V_data_13_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer7_out_V_data_14_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer7_out_V_data_15_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer8_out_V_data_0_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer8_out_V_data_1_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer8_out_V_data_2_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer8_out_V_data_3_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer8_out_V_data_4_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer8_out_V_data_5_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer8_out_V_data_6_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer8_out_V_data_7_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer8_out_V_data_8_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer8_out_V_data_9_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer8_out_V_data_10_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer8_out_V_data_11_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer8_out_V_data_12_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer8_out_V_data_13_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer8_out_V_data_14_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer8_out_V_data_15_V_U(fifo_w27_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'layer9_out_V_data_0_V_U(fifo_w27_d16_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer9_out_V_data_1_V_U(fifo_w27_d16_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer9_out_V_data_2_V_U(fifo_w27_d16_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer9_out_V_data_3_V_U(fifo_w27_d16_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer9_out_V_data_4_V_U(fifo_w27_d16_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer9_out_V_data_5_V_U(fifo_w27_d16_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer9_out_V_data_6_V_U(fifo_w27_d16_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer9_out_V_data_7_V_U(fifo_w27_d16_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer9_out_V_data_8_V_U(fifo_w27_d16_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'layer9_out_V_data_9_V_U(fifo_w27_d16_A)' using Shift Registers.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
