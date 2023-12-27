@@ -3,10 +3,10 @@
 
 #include <iostream>
 
-#define NUM_CU 12
+#define NUM_CU 10
 #define N_IN 360
 #define N_OUT 2
-#define N_ELEMS 1000
+#define N_ELEMS 100
 #define N_UINTS 128
 static const int inlength = N_IN * N_ELEMS * N_UINTS;
 static const int outlength = N_OUT * N_ELEMS * N_UINTS;

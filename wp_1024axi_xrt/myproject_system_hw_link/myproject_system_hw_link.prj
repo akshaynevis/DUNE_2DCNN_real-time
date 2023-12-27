@@ -3,7 +3,7 @@
   <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.hwlink.sw_emu.460021062">
     <configBuildOptions xsi:type="hwlink:LinkOptions">
       <binaryContainers name="binary_container_1" xoccOptions="--user_ip_repo_paths /mnt/storage1/akshaymalige/Alveo_projects/dune_2dcnn/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12_2018/myproject_prj/solution1/impl/ip --config ../myconfig.cfg" traceMemory="FIFO:8K">
-        <kernels name="krnl_rtl" projectName="myproject_kernels" numComputeUnits="12" kernelType="PRECOMPILED_KERNEL">
+        <kernels name="krnl_rtl" projectName="myproject_kernels" numComputeUnits="10" kernelType="PRECOMPILED_KERNEL">
           <computeUnits name="krnl_rtl_1" slr="SLR0"/>
           <computeUnits name="krnl_rtl_2" slr="SLR0"/>
           <computeUnits name="krnl_rtl_3" slr="SLR0"/>
@@ -14,8 +14,6 @@
           <computeUnits name="krnl_rtl_8" slr="SLR3"/>
           <computeUnits name="krnl_rtl_9" slr="SLR3"/>
           <computeUnits name="krnl_rtl_10" slr="SLR3"/>
-          <computeUnits name="krnl_rtl_11" slr="SLR0"/>
-          <computeUnits name="krnl_rtl_12" slr="SLR3"/>
         </kernels>
       </binaryContainers>
     </configBuildOptions>
@@ -23,7 +21,7 @@
   <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwlink.hw_emu.238030073">
     <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
       <binaryContainers name="binary_container_1" xoccOptions="--user_ip_repo_paths /mnt/storage1/akshaymalige/Alveo_projects/dune_2dcnn/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12_2018/myproject_prj/solution1/impl/ip --config ../myconfig.cfg" traceMemory="FIFO:8K">
-        <kernels name="krnl_rtl" projectName="myproject_kernels" numComputeUnits="12" kernelType="PRECOMPILED_KERNEL">
+        <kernels name="krnl_rtl" projectName="myproject_kernels" numComputeUnits="10" kernelType="PRECOMPILED_KERNEL">
           <computeUnits name="krnl_rtl_1" slr="SLR0"/>
           <computeUnits name="krnl_rtl_2" slr="SLR0"/>
           <computeUnits name="krnl_rtl_3" slr="SLR0"/>
@@ -34,8 +32,6 @@
           <computeUnits name="krnl_rtl_8" slr="SLR3"/>
           <computeUnits name="krnl_rtl_9" slr="SLR3"/>
           <computeUnits name="krnl_rtl_10" slr="SLR3"/>
-          <computeUnits name="krnl_rtl_11" slr="SLR0"/>
-          <computeUnits name="krnl_rtl_12" slr="SLR3"/>
         </kernels>
       </binaryContainers>
     </configBuildOptions>
@@ -50,7 +46,7 @@
   <configuration name="Hardware" id="com.xilinx.ide.accel.config.hwlink.hw.2092940653">
     <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
       <binaryContainers name="binary_container_1" xoccOptions="--user_ip_repo_paths /mnt/storage1/akshaymalige/Alveo_projects/dune_2dcnn/hls4ml_prj_u250_custom_stream_axi_fused_fixed_1024_1024_12_2018/myproject_prj/solution1/impl/ip --config ../myconfig.cfg" traceMemory="FIFO:8K">
-        <kernels name="krnl_rtl" projectName="myproject_kernels" numComputeUnits="12" kernelType="PRECOMPILED_KERNEL">
+        <kernels name="krnl_rtl" projectName="myproject_kernels" numComputeUnits="10" kernelType="PRECOMPILED_KERNEL">
           <computeUnits name="krnl_rtl_1" slr="SLR0"/>
           <computeUnits name="krnl_rtl_2" slr="SLR0"/>
           <computeUnits name="krnl_rtl_3" slr="SLR0"/>
@@ -61,8 +57,6 @@
           <computeUnits name="krnl_rtl_8" slr="SLR3"/>
           <computeUnits name="krnl_rtl_9" slr="SLR3"/>
           <computeUnits name="krnl_rtl_10" slr="SLR3"/>
-          <computeUnits name="krnl_rtl_11" slr="SLR0"/>
-          <computeUnits name="krnl_rtl_12" slr="SLR3"/>
         </kernels>
       </binaryContainers>
     </configBuildOptions>
