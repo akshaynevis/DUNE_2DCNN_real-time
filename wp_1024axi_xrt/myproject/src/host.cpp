@@ -17,6 +17,8 @@
 #include "experimental/xrt_device.h"
 #include "experimental/xrt_kernel.h"
 #include "host.h"
+#include <fstream>
+
 
 template <class src_T, class dst_T, size_t OFFSET, size_t SIZE> void copy_data(std::vector<src_T> src, dst_T dst[SIZE]) {
     typename std::vector<src_T>::const_iterator in_begin = src.cbegin() + OFFSET;
@@ -71,9 +73,8 @@ int main(int argc, char** argv) {
 		bo_out_map[i] = bo_out[i].map<uint8_t*>();
 	}
 
-	std::ifstream src("/mnt/storage1/akshaymalige/Alveo_projects/dune_2dcnn/fpga_inputX10000.csv");
 	std::vector<uint8_t> vec;
-	 if (!src)
+	 if (!SRC)
 	 {
 	   std::cerr << "\aError opening file.\n\n";
 	   exit(EXIT_FAILURE);
@@ -84,7 +85,7 @@ int main(int argc, char** argv) {
 	 size_t endpos;
 	 int ch =0;
 	 int chh=0;
-	 while(std::getline(src, buffer_t))
+	 while(std::getline(SRC, buffer_t))
 	 {
 	   endpos= buffer_t.find(',');
 	   while (endpos < buffer_t.length())

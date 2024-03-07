@@ -2,18 +2,23 @@
 #define HOST_H_
 
 #include <iostream>
+#include <fstream>
 
-#define NUM_CU 10
-#define N_IN 360
-#define N_OUT 2
-#define N_ELEMS 100
-#define N_UINTS 128
+#define NUM_CU 10						//*Number of kernel instances
+#define OUT_BUS_WIDTH 1024				//*AXI bus width
+#define N_ELEMS 80						//*Number of input images
+
+#define _CLASSIFIER_1D_IMG_LEN 480*64	//Image size
+#define ADC_WIDTH 12					//ADC resolution
+#define N_IN (_CLASSIFIER_1D_IMG_LEN * ADC_WIDTH) / OUT_BUS_WIDTH	//Number of uint8_t values per input image
+#define N_OUT 2							//Number os output values per input (classification scores)
+#define N_UINTS OUT_BUS_WIDTH/8			//Number of uint8_t values in output per image
 static const int inlength = N_IN * N_ELEMS * N_UINTS;
 static const int outlength = N_OUT * N_ELEMS * N_UINTS;
-#define INLEN inlength
-#define OUTLEN outlength
-#define OUT_BUS_WIDTH 1024
+#define INLEN inlength					//Total number of uint8_t inputs in the file
+#define OUTLEN outlength				//Total number of uint8_t outputs for the file
 
+std::ifstream SRC("/mnt/storage1/akshaymalige/Alveo_projects/dune_2dcnn/fpga_inputX800.csv");
 
 bool Decoder(std::vector<uint8_t> arr_vec){
 
@@ -26,6 +31,7 @@ bool Decoder(std::vector<uint8_t> arr_vec){
 	int cidx=0;
 	int64_t xout,yout=0;
 	float result[cols];
+	std::vector<float> vec_out;
 	std::vector<uint8_t> yvec;
 	for(int i=0; i< OUTLEN; i++){  //idxs = np.array(list(range(len(y))))
 		idx[i]=i;
@@ -46,6 +52,8 @@ bool Decoder(std::vector<uint8_t> arr_vec){
 			y1D.clear();
 		}
 	}
+
+	int r_count=0;
 	for (int row = 0; row < y2D.size(); ++row) {  //y = y.view(dtype=self.out_dtype) * (2**-self.default_fb)
 		xout=0;
 		yout=0;
@@ -59,8 +67,19 @@ bool Decoder(std::vector<uint8_t> arr_vec){
 		}
 		result[row*2]=xout*pow(2,-18);
 		result[row*2+1]=yout*pow(2,-18);
-		std::cout<<row<<"\t"<<result[row*2]<<"\t\t"<<result[row*2+1]<<std::endl;
+		vec_out.push_back(xout*pow(2,-18));
+		vec_out.push_back(yout*pow(2,-18));
+//		std::cout<<row<<"\t"<<result[row*2]<<"\t\t"<<result[row*2+1]<<std::endl;
+		std::cout<<result[row*2]<<std::endl;
+		std::cout<<result[row*2+1]<<std::endl;
+		r_count=r_count+2;
 	}
+//    std::vector<uint8_t> y1D;
+//    std::ofstream myfile;
+//	std::cout<<"r_count "<<r_count<<std::endl;
+//	for(int r=0; r<vec_out.size(); r++){
+//		myfile << vec_out[r]<<std::endl;
+//	}
 
 return true;
 }
